@@ -71,7 +71,7 @@ public abstract class PagedView extends ViewGroup implements ViewGroup.OnHierarc
     protected static final int INVALID_PAGE = -1;
 
     // the min drag distance for a fling to register, to prevent random page shifts
-    private static final int MIN_LENGTH_FOR_FLING = 25;
+    private static final int MIN_LENGTH_FOR_FLING = 15;
 
     protected static final int PAGE_SNAP_ANIMATION_DURATION = 750;
     protected static final int OVER_SCROLL_PAGE_SNAP_ANIMATION_DURATION = 350;
@@ -87,9 +87,9 @@ public abstract class PagedView extends ViewGroup implements ViewGroup.OnHierarc
 
     // The following constants need to be scaled based on density. The scaled versions will be
     // assigned to the corresponding member variables below.
-    private static final int FLING_THRESHOLD_VELOCITY = 500;
+    private static final int FLING_THRESHOLD_VELOCITY = 600;
     private static final int MIN_SNAP_VELOCITY = 1500;
-    private static final int MIN_FLING_VELOCITY = 250;
+    private static final int MIN_FLING_VELOCITY = 300;
 
     // We are disabling touch interaction of the widget region for factory ROM.
     private static final boolean DISABLE_TOUCH_INTERACTION = false;
