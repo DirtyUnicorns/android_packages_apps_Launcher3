@@ -21,10 +21,6 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.android.launcher3">
 
-    <uses-sdk
-        android:targetSdkVersion="19"
-        android:minSdkVersion="19" />
-
     <permission
         android:name="com.android.launcher3.permission.PRELOAD_WORKSPACE"
         android:permissionGroup="android.permission-group.SYSTEM_TOOLS"

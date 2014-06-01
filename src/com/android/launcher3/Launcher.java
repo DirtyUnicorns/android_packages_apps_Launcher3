@@ -398,6 +398,7 @@ public class Launcher extends Activity
                         // Start action
                         try {
                             Intent intent = Intent.parseUri(mHotwordsActions[index], 0);
+                            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                             startActivity(intent);
                         } catch (URISyntaxException e) {
                             Log.e(TAG, "Unable to start hotword action " + mHotwordsActions[index], e);
@@ -2020,7 +2021,7 @@ public class Launcher extends Activity
     @Override
     public boolean onPrepareOptionsMenu(Menu menu) {
         super.onPrepareOptionsMenu(menu);
-        if (!mWorkspace.isInOverviewMode()) {
+        if (!mWorkspace.isInOverviewMode() && mState == State.WORKSPACE) {
             mWorkspace.enterOverviewMode();
         }
         return false;
@@ -4607,6 +4608,17 @@ public class Launcher extends Activity
     public void clearHotwordRecognition() {
         if (DEBUG_HOTWORD) Log.d(TAG, "clearHotwordRecognition");
 
+        if (mAudioManager != null) {
+            // Unmute if we're muted, but only after some time to avoid hearing the
+            // beep when opening an app if it's happening
+            mHandler.postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    mAudioManager.setStreamMute(MUTE_STREAM, false);
+                }
+            }, 50);
+        }
+
         if (mSpeechRecognizer != null) {
             mSpeechRecognizer.cancel();
         }
@@ -4727,4 +4739,3 @@ interface LauncherTransitionable {
     void onLauncherTransitionStep(Launcher l, float t);
     void onLauncherTransitionEnd(Launcher l, boolean animated, boolean toWorkspace);
 }
-
