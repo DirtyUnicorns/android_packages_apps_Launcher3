@@ -4588,7 +4588,7 @@ public class Launcher extends Activity
         if (mWorkspace != null) mWorkspace.setAlpha(0f);
         if (mHotseat != null) mHotseat.setAlpha(0f);
         if (mPageIndicators != null) mPageIndicators.setAlpha(0f);
-        if (mSearchDropTargetBar != null) mSearchDropTargetBar.hideSearchBar(false);
+        if (mSearchDropTargetBar != null) mSearchDropTargetBar.hideSearchBar(true);
     }
 
 
