@@ -40,9 +40,9 @@ class LauncherClings {
     private static final String WORKSPACE_CLING_DISMISSED_KEY = "cling_gel.workspace.dismissed";
     private static final String FOLDER_CLING_DISMISSED_KEY = "cling_gel.folder.dismissed";
 
-    private static final boolean DISABLE_CLINGS = false;
+    private static final boolean DISABLE_CLINGS = true;
 
-    private static final int SHOW_CLING_DURATION = 250;
+    private static final int SHOW_CLING_DURATION = 0;
     private static final int DISMISS_CLING_DURATION = 200;
 
     private Launcher mLauncher;
