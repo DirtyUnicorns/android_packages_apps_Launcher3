@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Preferences -->
     <string name="pref_workspace_title">Paramètres de l\'écran d\'accueil</string>
     <string name="pref_title_workspace_rows">Lignes</string>
     <string name="pref_title_workspace_cols">Colonnes</string>
@@ -10,6 +12,7 @@
     <string name="icon_packs_title">Packs d\'icônes</string>
     <string name="no_iconpacks_summary">Aucun pack d\'icônes installé</string>
     <string name="pref_icon_pack_title">Pack d\'icônes</string>
+
     <string name="pref_hotwords_title">Mots-clés</string>
     <string name="pref_title_enable_hotwords">Activer la reconnaissance des mots-clés</string>
     <string name="pref_desc_enable_hotwords">Déclencher des actions depuis l\'écran d\'accueil en prononçant les mots-clés définis</string>
@@ -21,10 +24,15 @@
     <string name="dialog_hotword_title">Mots-clés personnalisés</string>
     <string name="dialog_hotword_text">Phrase</string>
     <string name="dialog_hotword_select_action">Sélectionner une action</string>
+
     <string name="profile_applist_title">Applications</string>
     <string name="profile_choose_app">Choisir une application</string>
     <string name="profiles_add">Ajouter</string>
     <string name="picker_activities">Activités</string>
     <string name="select_custom_app_title">Sélectionner une application personnalisée</string>
     <string name="select_custom_activity_title">Sélectionner une activité personnalisée</string>
+
+    <string name="pref_drawer_icon">Icône du tiroir d\'applications</string>
+    <string name="drawer_icon_default">Icône par défaut</string>
+    <string name="drawer_icon_custom">Choisir une image</string>
 </resources>
