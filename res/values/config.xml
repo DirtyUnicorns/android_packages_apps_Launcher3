@@ -36,12 +36,12 @@
     <!-- Fade/zoom in/out duration & scale in the AllApps transition.
          Note: This should be less than the workspaceShrinkTime as they happen together. -->
     <integer name="config_appsCustomizeRevealTime">220</integer>
-    <integer name="config_appsCustomizeZoomInTime">350</integer>
-    <integer name="config_appsCustomizeZoomOutTime">600</integer>
+    <integer name="config_appsCustomizeZoomInTime">225</integer>
+    <integer name="config_appsCustomizeZoomOutTime">375</integer>
     <integer name="config_appsCustomizeZoomScaleFactor">7</integer>
-    <integer name="config_appsCustomizeFadeInTime">250</integer>
-    <integer name="config_appsCustomizeFadeOutTime">200</integer>
-    <integer name="config_appsCustomizeWorkspaceShrinkTime">300</integer>
+    <integer name="config_appsCustomizeFadeInTime">225</integer>
+    <integer name="config_appsCustomizeFadeOutTime">175</integer>
+    <integer name="config_appsCustomizeWorkspaceShrinkTime">175</integer>
 
     <integer name="config_appsCustomizeConcealTime">250</integer>
     <integer name="config_appsCustomizeItemsAlphaStagger">60</integer>
@@ -53,7 +53,7 @@
     <integer name="config_workspaceDefaultScreen">0</integer>
 
     <!-- Tab transition animation duration -->
-    <integer name="config_tabTransitionDuration">250</integer>
+    <integer name="config_tabTransitionDuration">150</integer>
 
     <!-- The slope, in percent, of the drag movement needed to drag an item out of
          AppsCustomize (y / x * 100%)  -->
@@ -68,7 +68,7 @@
 
     <!-- The duration (in ms) of the fade animation on the object outlines, used when
          we are dragging objects around on the home screen. -->
-    <integer name="config_dragOutlineFadeTime">900</integer>
+    <integer name="config_dragOutlineFadeTime">700</integer>
 
     <!-- The alpha value at which to show the most recent drop visualization outline. -->
     <integer name="config_dragOutlineMaxAlpha">128</integer>
