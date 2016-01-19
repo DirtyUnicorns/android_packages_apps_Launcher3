@@ -129,6 +129,11 @@ public class IconCache {
         updateSystemStateString();
     }
 
+    public void reset() {
+        mIconDb.clearDB(mIconDb.getWritableDatabase());
+        mCache.clear();
+    }
+
     private Drawable getFullResDefaultActivityIcon() {
         return getFullResIcon(Resources.getSystem(), android.R.mipmap.sym_def_app_icon);
     }
