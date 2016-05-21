@@ -106,7 +106,6 @@ import com.android.launcher3.compat.UserManagerCompat;
 import com.android.launcher3.model.WidgetsModel;
 import com.android.launcher3.util.ComponentKey;
 import com.android.launcher3.util.LongArrayMap;
-import com.android.launcher3.util.ThemeUtils;
 import com.android.launcher3.util.Thunk;
 import com.android.launcher3.widget.PendingAddWidgetInfo;
 import com.android.launcher3.widget.WidgetHostViewLoader;
@@ -968,18 +967,6 @@ public class Launcher extends Activity
             startTime = System.currentTimeMillis();
             Log.v(TAG, "Launcher.onResume()");
         }
-
-        //We're checking if icon pack has changed
-        String dbIconPack = mSharedPrefs.getString("iconpack", null);
-        String currentIconPack = ThemeUtils.getCurrentIconPack(this);
-
-        if (dbIconPack != null && currentIconPack != null && !currentIconPack.equals(dbIconPack)) {
-            mIconCache.reset();
-        }
-
-        SharedPreferences.Editor editor = mSharedPrefs.edit();
-        editor.putString("iconpack", currentIconPack);
-        editor.apply();
 
         if (mLauncherCallbacks != null) {
             mLauncherCallbacks.preOnResume();

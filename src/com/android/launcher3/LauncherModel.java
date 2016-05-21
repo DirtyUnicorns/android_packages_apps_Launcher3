@@ -28,7 +28,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.Intent.ShortcutIconResource;
 import android.content.IntentFilter;
-import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.content.pm.ProviderInfo;
 import android.content.pm.ResolveInfo;
@@ -62,7 +61,6 @@ import com.android.launcher3.util.ComponentKey;
 import com.android.launcher3.util.CursorIconInfo;
 import com.android.launcher3.util.LongArrayMap;
 import com.android.launcher3.util.ManagedProfileHeuristic;
-import com.android.launcher3.util.ThemeUtils;
 import com.android.launcher3.util.Thunk;
 
 import java.lang.ref.WeakReference;
@@ -1449,22 +1447,6 @@ public class LauncherModel extends BroadcastReceiver
             if (DEBUG_LOADERS) {
                 Log.d(TAG, "loadAndBindWorkspace mWorkspaceLoaded=" + mWorkspaceLoaded);
             }
-
-            SharedPreferences mSharedPrefs = this.mContext.getSharedPreferences(LauncherAppState.getSharedPreferencesKey(),
-                    Context.MODE_PRIVATE);
-
-            //We're checking if icon pack has changed
-            String dbIconPack = mSharedPrefs.getString("iconpack", null);
-            String currentIconPack = ThemeUtils.getCurrentIconPack(this.mContext);
-
-            if (dbIconPack != null && currentIconPack != null && !currentIconPack.equals(dbIconPack)) {
-                mIconCache.reset();
-            }
-
-            SharedPreferences.Editor editor = mSharedPrefs.edit();
-            editor.putString("iconpack", currentIconPack);
-            editor.apply();
-
 
             if (!mWorkspaceLoaded) {
                 loadWorkspace();

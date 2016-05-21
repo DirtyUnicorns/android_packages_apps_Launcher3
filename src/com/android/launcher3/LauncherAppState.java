@@ -37,7 +37,6 @@ public class LauncherAppState {
     private final BuildInfo mBuildInfo;
     @Thunk final LauncherModel mModel;
     private final IconCache mIconCache;
-    private String currentIconPack;
     private final WidgetPreviewLoader mWidgetCache;
 
     private boolean mWallpaperChangedSinceLastCheck;
@@ -177,13 +176,5 @@ public class LauncherAppState {
 
     public static boolean isDogfoodBuild() {
         return getInstance().mBuildInfo.isDogfoodBuild();
-    }
-
-    public String getCurrentIconPack() {
-        return currentIconPack;
-    }
-
-    public void setCurrentIconPack(String currentIconPack) {
-        this.currentIconPack = currentIconPack;
     }
 }
