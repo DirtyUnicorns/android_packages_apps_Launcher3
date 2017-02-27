@@ -293,7 +293,7 @@ public class ShortcutInfo extends ItemInfo {
     }
 
     public boolean shouldUseLowResIcon() {
-        return usingLowResIcon && container >= 0 && rank >= FolderIcon.NUM_ITEMS_IN_PREVIEW;
+        return usingLowResIcon && container >= 0 && rank >= FolderIcon.getMaxPreviewItems();
     }
 
     public void updateFromDeepShortcutInfo(ShortcutInfoCompat shortcutInfo, Context context) {

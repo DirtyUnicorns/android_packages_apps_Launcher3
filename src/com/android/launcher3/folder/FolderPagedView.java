@@ -351,7 +351,7 @@ public class FolderPagedView extends PagedView {
                 currentPage.addViewToCellLayout(
                         v, -1, mFolder.mLauncher.getViewIdForItem(info), lp, true);
 
-                if (rank < FolderIcon.NUM_ITEMS_IN_PREVIEW && v instanceof BubbleTextView) {
+                if (rank < FolderIcon.getMaxPreviewItems() && v instanceof BubbleTextView) {
                     ((BubbleTextView) v).verifyHighRes();
                 }
             }

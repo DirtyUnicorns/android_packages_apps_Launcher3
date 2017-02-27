@@ -82,10 +82,6 @@ public class FolderIcon extends FrameLayout implements FolderListener {
     private FolderInfo mInfo;
     @Thunk static boolean sStaticValuesDirty = true;
 
-    public static final int NUM_ITEMS_IN_PREVIEW = FeatureFlags.LAUNCHER3_LEGACY_FOLDER_ICON ?
-            StackFolderIconLayoutRule.MAX_NUM_ITEMS_IN_PREVIEW :
-            ClippedFolderIconLayoutRule.MAX_NUM_ITEMS_IN_PREVIEW;
-
     private CheckLongPressHelper mLongPressHelper;
     private StylusEventHelper mStylusEventHelper;
 
@@ -191,6 +187,12 @@ public class FolderIcon extends FrameLayout implements FolderListener {
     protected Parcelable onSaveInstanceState() {
         sStaticValuesDirty = true;
         return super.onSaveInstanceState();
+    }
+
+    public static int getMaxPreviewItems() {
+        return FeatureFlags.LAUNCHER3_LEGACY_FOLDER_ICON ?
+            StackFolderIconLayoutRule.MAX_NUM_ITEMS_IN_PREVIEW :
+            ClippedFolderIconLayoutRule.MAX_NUM_ITEMS_IN_PREVIEW;
     }
 
     public Folder getFolder() {

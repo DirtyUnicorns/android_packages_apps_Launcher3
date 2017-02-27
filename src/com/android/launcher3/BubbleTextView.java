@@ -575,7 +575,7 @@ public class BubbleTextView extends TextView
             } else if (info instanceof ShortcutInfo) {
                 applyFromShortcutInfo((ShortcutInfo) info,
                         LauncherAppState.getInstance().getIconCache());
-                if ((info.rank < FolderIcon.NUM_ITEMS_IN_PREVIEW) && (info.container >= 0)) {
+                if ((info.rank < FolderIcon.getMaxPreviewItems()) && (info.container >= 0)) {
                     View folderIcon =
                             mLauncher.getWorkspace().getHomescreenIconByItemId(info.container);
                     if (folderIcon != null) {

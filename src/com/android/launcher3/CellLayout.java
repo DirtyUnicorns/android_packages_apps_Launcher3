@@ -115,8 +115,6 @@ public class CellLayout extends ViewGroup implements BubbleTextShadowHandler {
 
     private float mBackgroundAlpha;
 
-    private static final int BACKGROUND_ACTIVATE_DURATION =
-            FeatureFlags.LAUNCHER3_LEGACY_WORKSPACE_DND ? 120 : 0;
     private final TransitionDrawable mBackground;
 
     // These values allow a fixed measurement to be set on the CellLayout.
@@ -427,10 +425,10 @@ public class CellLayout extends ViewGroup implements BubbleTextShadowHandler {
         if (mIsDragOverlapping != isDragOverlapping) {
             mIsDragOverlapping = isDragOverlapping;
             if (mIsDragOverlapping) {
-                mBackground.startTransition(BACKGROUND_ACTIVATE_DURATION);
+                mBackground.startTransition(getBackgroundAnimationDuration());
             } else {
                 if (mBackgroundAlpha > 0f) {
-                    mBackground.reverseTransition(BACKGROUND_ACTIVATE_DURATION);
+                    mBackground.reverseTransition(getBackgroundAnimationDuration());
                 } else {
                     mBackground.resetTransition();
                 }
@@ -463,6 +461,10 @@ public class CellLayout extends ViewGroup implements BubbleTextShadowHandler {
         final Parcelable parcelable = container.get(R.id.cell_layout_jail_id);
         return parcelable instanceof ParcelableSparseArray ?
                 (ParcelableSparseArray) parcelable : new ParcelableSparseArray();
+    }
+
+    private static int getBackgroundAnimationDuration() {
+        return FeatureFlags.LAUNCHER3_LEGACY_WORKSPACE_DND ? 120 : 0;
     }
 
     public boolean getIsDragOverlapping() {

@@ -815,9 +815,6 @@ public class IconCache {
     private static final class IconDB extends SQLiteCacheHelper {
         private final static int DB_VERSION = 10;
 
-        private final static int RELEASE_VERSION = DB_VERSION +
-                (FeatureFlags.LAUNCHER3_DISABLE_ICON_NORMALIZATION ? 0 : 1);
-
         private final static String TABLE_NAME = "icons";
         private final static String COLUMN_ROWID = "rowid";
         private final static String COLUMN_COMPONENT = "componentName";
@@ -831,7 +828,7 @@ public class IconCache {
 
         public IconDB(Context context, int iconPixelSize) {
             super(context, LauncherFiles.APP_ICONS_DB,
-                    (RELEASE_VERSION << 16) + iconPixelSize,
+                    (getReleaseVersion() << 16) + iconPixelSize,
                     TABLE_NAME);
         }
 
@@ -848,6 +845,10 @@ public class IconCache {
                     COLUMN_SYSTEM_STATE + " TEXT, " +
                     "PRIMARY KEY (" + COLUMN_COMPONENT + ", " + COLUMN_USER + ") " +
                     ");");
+        }
+
+        private static int getReleaseVersion() {
+            return DB_VERSION + (FeatureFlags.LAUNCHER3_DISABLE_ICON_NORMALIZATION ? 0 : 1);
         }
     }
 
