@@ -43,6 +43,7 @@
     <color name="all_apps_container_color">#FFF2F2F2</color>
     <color name="all_apps_navbar_color">#28000000</color>
     <color name="all_apps_empty_search_text_color">#212121</color>
+    <color name="all_apps_search_text_color">#4c4c4c</color>
 
     <color name="wallpaper_button_text_color">@android:color/white</color>
     <color name="widget_button_text_color">@android:color/white</color>
