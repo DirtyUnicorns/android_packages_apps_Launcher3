@@ -149,6 +149,7 @@ public final class Utilities {
 
     public static final String ALLOW_ROTATION_PREFERENCE_KEY = "pref_allowRotation";
     public static final String SHOW_SEARCH_BAR_PREFERENCE_KEY = "pref_searchBar";
+    public static final String ICON_PACK_PREFERENCE_KEY = "pref_iconPackPackage";
 
     public static boolean isPropertyEnabled(String propertyName) {
         return Log.isLoggable(propertyName, Log.VERBOSE);
