@@ -251,9 +251,12 @@ public class IconCache {
             // Query for the set of apps
             final List<LauncherActivityInfoCompat> apps = mLauncherApps.getActivityList(null, user);
             // Fail if we don't have any apps
-            // TODO: Fix this. Only fail for the current user.
             if (apps == null || apps.isEmpty()) {
-                return;
+                if (user.equals(UserHandleCompat.myUserHandle())) {
+                    return;
+                } else {
+                    continue;
+                }
             }
 
             // Update icon cache. This happens in segments and {@link #onPackageIconsUpdated}
