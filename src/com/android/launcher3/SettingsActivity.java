@@ -53,6 +53,7 @@ public class SettingsActivity extends Activity {
         private SystemDisplayRotationLockObserver mRotationLockObserver;
 
         private SwitchPreference mShowSearchBar;
+        private SwitchPreference mPredictiveApps;
 
         private PreferenceScreen mPreferenceScreen;
 
@@ -86,6 +87,9 @@ public class SettingsActivity extends Activity {
 
             mShowSearchBar = (SwitchPreference) findPreference(Utilities.SHOW_SEARCH_BAR_PREFERENCE_KEY);
             mShowSearchBar.setChecked(Utilities.isShowSearchBar(getActivity()));
+
+            mPredictiveApps = (SwitchPreference) findPreference(Utilities.PREDICTIVE_APPS_PREFERENCE_KEY);
+            mPredictiveApps.setChecked(Utilities.isPredictAppsEnabled(getActivity()));
         }
 
         @Override
@@ -106,6 +110,11 @@ public class SettingsActivity extends Activity {
             if (preference == mShowSearchBar) {
                 boolean enable = mShowSearchBar.isChecked();
                 Utilities.updateShowSearchBar(getActivity(), enable);
+                return true;
+            }
+            if (preference == mPredictiveApps) {
+                boolean enable = mPredictiveApps.isChecked();
+                Utilities.updatePredictApps(getActivity(), enable);
                 return true;
             }
             return false;

@@ -359,6 +359,7 @@ public class Launcher extends Activity
     private boolean mRotationEnabled = false;
 
     private PredictiveAppsProvider mPredictiveAppsProvider;
+    private boolean mShowPredictiveApps;
 
     @Thunk void setOrientation() {
         if (mRotationEnabled) {
@@ -391,7 +392,8 @@ public class Launcher extends Activity
             Trace.beginSection("Launcher-onCreate");
         }
 
-        mPredictiveAppsProvider = new PredictiveAppsProvider(this);
+        mShowPredictiveApps = Utilities.isPredictAppsEnabled(getApplicationContext());
+        setupPredictiveAppProvider();
 
         if (mLauncherCallbacks != null) {
             mLauncherCallbacks.preOnCreate();
@@ -483,6 +485,12 @@ public class Launcher extends Activity
 
         if (mLauncherCallbacks != null) {
             mLauncherCallbacks.onCreate(savedInstanceState);
+        }
+    }
+
+    private void setupPredictiveAppProvider() {
+        if (mShowPredictiveApps && mPredictiveAppsProvider == null) {
+             mPredictiveAppsProvider = new PredictiveAppsProvider(getApplicationContext());
         }
     }
 
@@ -2854,7 +2862,7 @@ public class Launcher extends Activity
             } else if (user == null || user.equals(UserHandleCompat.myUserHandle())) {
                 // Could be launching some bookkeeping activity
                 startActivity(intent, optsBundle);
-                if (isAllAppsVisible()) {
+                if (isAllAppsVisible() && mShowPredictiveApps) {
                     mPredictiveAppsProvider.updateComponentCount(intent.getComponent());
                 }
             } else {
@@ -3439,16 +3447,26 @@ public class Launcher extends Activity
      * resumed.
      */
     public void tryAndUpdatePredictedApps() {
-        List<ComponentKey> apps;
-        if (mLauncherCallbacks != null) {
-            apps = mLauncherCallbacks.getPredictedApps();
+        if (!mShowPredictiveApps) {
+            if (mLauncherCallbacks != null) {
+                List<ComponentKey> apps = mLauncherCallbacks.getPredictedApps();
+                if (apps != null) {
+                    mAppsView.setPredictedApps(apps);
+                    getUserEventDispatcher().setPredictedApps(apps);
+                }
+            }
         } else {
-            apps = mPredictiveAppsProvider.getPredictions();
-            mPredictiveAppsProvider.updateTopPredictedApps();
-        }
+            List<ComponentKey> apps;
+            if (mLauncherCallbacks != null) {
+                apps = mLauncherCallbacks.getPredictedApps();
+            } else {
+                apps = mPredictiveAppsProvider.getPredictions();
+                mPredictiveAppsProvider.updateTopPredictedApps();
+            }
 
-        if (apps != null) {
-            mAppsView.setPredictedApps(apps);
+            if (apps != null) {
+                mAppsView.setPredictedApps(apps);
+            }
         }
     }
 
@@ -4505,11 +4523,12 @@ public class Launcher extends Activity
         @Override
         public void onSharedPreferenceChanged(
                 SharedPreferences sharedPreferences, String key) {
-            Context mAppContext = getApplicationContext();
             if (Utilities.ALLOW_ROTATION_PREFERENCE_KEY.equals(key)) {
-                mRotationEnabled = Utilities.isAllowRotationPrefEnabled(mAppContext);
+                mRotationEnabled = Utilities.isAllowRotationPrefEnabled(getApplicationContext());
             } else if (Utilities.SHOW_SEARCH_BAR_PREFERENCE_KEY.equals(key)) {
                 mShowSearchBar = Utilities.isShowSearchBar(getApplicationContext());
+            } else if (Utilities.PREDICTIVE_APPS_PREFERENCE_KEY.equals(key)) {
+                mShowPredictiveApps = Utilities.isPredictAppsEnabled(getApplicationContext());
             }
             if (!waitUntilResume(this, true)) {
                 run();
@@ -4524,6 +4543,9 @@ public class Launcher extends Activity
             }
             if (mShowSearchBar) {
                 mWorkspace.updateQsbVisibility(mShowSearchBar);
+            }
+            if (mShowPredictiveApps) {
+                setupPredictiveAppProvider();
             }
         }
     }

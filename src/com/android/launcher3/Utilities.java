@@ -150,6 +150,7 @@ public final class Utilities {
     public static final String ALLOW_ROTATION_PREFERENCE_KEY = "pref_allowRotation";
     public static final String SHOW_SEARCH_BAR_PREFERENCE_KEY = "pref_searchBar";
     public static final String ICON_PACK_PREFERENCE_KEY = "pref_iconPackPackage";
+    public static final String PREDICTIVE_APPS_PREFERENCE_KEY = "pref_showPredictiveApps";
 
     public static boolean isPropertyEnabled(String propertyName) {
         return Log.isLoggable(propertyName, Log.VERBOSE);
@@ -178,6 +179,14 @@ public final class Utilities {
             return originalSmallestWidth >= 600;
         }
         return false;
+    }
+
+    public static boolean isPredictAppsEnabled(Context context) {
+        return getPrefs(context).getBoolean(PREDICTIVE_APPS_PREFERENCE_KEY, true);
+    }
+
+    public static void updatePredictApps(Context context, boolean enable) {
+        getPrefs(context).edit().putBoolean(PREDICTIVE_APPS_PREFERENCE_KEY, enable);
     }
 
     public static Bitmap createIconBitmap(Cursor c, int iconIndex, Context context) {

@@ -163,6 +163,7 @@
     <string name="search_bar_title">Show search bar</string>
     <string name="icon_pack">Icon Pack</string>
     <string name="icon_pack_summary">Select an icon Pack</string>
+    <string name="show_predictive_apps_title">Predictive apps</string>
 
     <!-- Label on an icon that references an uninstalled package, for which we have no information about when it might be installed. [CHAR_LIMIT=15] -->
     <string name="package_state_unknown">Unknown</string>
