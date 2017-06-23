@@ -159,6 +159,7 @@ public class LauncherAppState {
      * Reloads everything
      */
     public void reloadAll() {
+        mModel.clearIconCache();
         mModel.resetLoadedState(true, true);
         mModel.startLoaderFromBackground();
     }
