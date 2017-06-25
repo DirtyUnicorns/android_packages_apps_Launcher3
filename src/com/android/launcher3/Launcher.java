@@ -228,6 +228,7 @@ public class Launcher extends Activity
     @Thunk DragLayer mDragLayer;
     private DragController mDragController;
     private View mQsbContainer;
+    private boolean mShowSearchBar = FeatureFlags.QSB_ON_FIRST_SCREEN;
 
     public View mWeightWatcher;
 
@@ -293,6 +294,7 @@ public class Launcher extends Activity
     private long mAutoAdvanceSentTime;
     private long mAutoAdvanceTimeLeft = -1;
     @Thunk HashMap<View, AppWidgetProviderInfo> mWidgetsToAdvance = new HashMap<>();
+
 
     // Determines how long to wait after a rotation before restoring the screen orientation to
     // match the sensor state.
@@ -392,9 +394,6 @@ public class Launcher extends Activity
 
         super.onCreate(savedInstanceState);
 
-        boolean visible = Utilities.isShowSearchBar(this);
-        FeatureFlags.QSB_ON_FIRST_SCREEN = visible;
-
         LauncherAppState app = LauncherAppState.getInstance();
 
         // Load configuration-specific DeviceProfile
@@ -465,6 +464,8 @@ public class Launcher extends Activity
         if (!mRotationEnabled) {
             mRotationEnabled = Utilities.isAllowRotationPrefEnabled(getApplicationContext());
         }
+
+        mShowSearchBar = Utilities.isShowSearchBar(getApplicationContext());
 
         if (mLauncherPrefChangeHandler != null) {
             mLauncherPrefChangeHandler = new LauncherPrefChangeHandler();
@@ -3231,7 +3232,7 @@ public class Launcher extends Activity
             getWindow().getDecorView()
                     .sendAccessibilityEvent(AccessibilityEvent.TYPE_WINDOW_STATE_CHANGED);
         }
-        mWorkspace.updateQsbVisibility();
+        mWorkspace.updateQsbVisibility(mShowSearchBar);
         return changed;
     }
 
@@ -4487,18 +4488,25 @@ public class Launcher extends Activity
         @Override
         public void onSharedPreferenceChanged(
                 SharedPreferences sharedPreferences, String key) {
+            Context mAppContext = getApplicationContext();
             if (Utilities.ALLOW_ROTATION_PREFERENCE_KEY.equals(key)) {
-                mRotationEnabled = Utilities.isAllowRotationPrefEnabled(getApplicationContext());
-                if (!waitUntilResume(this, true)) {
-                    run();
-                }
+                mRotationEnabled = Utilities.isAllowRotationPrefEnabled(mAppContext);
+            } else if (Utilities.SHOW_SEARCH_BAR_PREFERENCE_KEY.equals(key)) {
+                mShowSearchBar = Utilities.isShowSearchBar(getApplicationContext());
             }
+            if (!waitUntilResume(this, true)) {
+                run();
+            }
+
         }
 
         @Override
         public void run() {
             if (mRotationEnabled) {
                 setOrientation();
+            }
+            if (mShowSearchBar) {
+                mWorkspace.updateQsbVisibility(mShowSearchBar);
             }
         }
     }

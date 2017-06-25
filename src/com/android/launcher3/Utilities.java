@@ -160,7 +160,11 @@ public final class Utilities {
     }
 
     public static boolean isShowSearchBar(Context context) {
-        return getPrefs(context).getBoolean(SHOW_SEARCH_BAR_PREFERENCE_KEY, true);
+        return getPrefs(context).getBoolean(SHOW_SEARCH_BAR_PREFERENCE_KEY, FeatureFlags.QSB_ON_FIRST_SCREEN);
+    }
+
+    public static void updateShowSearchBar(Context context, boolean enable) {
+        getPrefs(context).edit().putBoolean(SHOW_SEARCH_BAR_PREFERENCE_KEY, enable);
     }
 
     public static boolean getAllowRotationDefaultValue(Context context) {

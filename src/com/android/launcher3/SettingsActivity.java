@@ -24,6 +24,8 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.preference.Preference;
 import android.preference.PreferenceFragment;
+import android.preference.PreferenceScreen;
+import android.preference.SwitchPreference;
 import android.provider.Settings;
 import android.provider.Settings.System;
 import android.view.MenuItem;
@@ -50,17 +52,23 @@ public class SettingsActivity extends Activity {
 
         private SystemDisplayRotationLockObserver mRotationLockObserver;
 
+        private SwitchPreference mShowSearchBar;
+
+        private PreferenceScreen mPreferenceScreen;
+
         @Override
         public void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
             getPreferenceManager().setSharedPreferencesName(LauncherFiles.SHARED_PREFERENCES_KEY);
             addPreferencesFromResource(R.xml.launcher_preferences);
 
+            mPreferenceScreen = getPreferenceScreen();
+
             // Setup allow rotation preference
             Preference rotationPref = findPreference(Utilities.ALLOW_ROTATION_PREFERENCE_KEY);
             if (getResources().getBoolean(R.bool.allow_rotation)) {
                 // Launcher supports rotation by default. No need to show this setting.
-                getPreferenceScreen().removePreference(rotationPref);
+                mPreferenceScreen.removePreference(rotationPref);
             } else {
                 ContentResolver resolver = getActivity().getContentResolver();
                 mRotationLockObserver = new SystemDisplayRotationLockObserver(rotationPref, resolver);
@@ -75,6 +83,9 @@ public class SettingsActivity extends Activity {
                 mRotationLockObserver.onChange(true);
                 rotationPref.setDefaultValue(Utilities.getAllowRotationDefaultValue(getActivity()));
             }
+
+            mShowSearchBar = (SwitchPreference) findPreference(Utilities.SHOW_SEARCH_BAR_PREFERENCE_KEY);
+            mShowSearchBar.setChecked(Utilities.isShowSearchBar(getActivity()));
         }
 
         @Override
@@ -84,6 +95,16 @@ public class SettingsActivity extends Activity {
                 mRotationLockObserver = null;
             }
             super.onDestroy();
+        }
+
+        @Override
+        public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
+            if (preference == mShowSearchBar) {
+                boolean enable = mShowSearchBar.isChecked();
+                Utilities.updateShowSearchBar(getActivity(), enable);
+                return true;
+            }
+            return false;
         }
     }
 
