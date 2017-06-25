@@ -1150,11 +1150,8 @@ public class Launcher extends Activity
     protected boolean hasSettings() {
         if (mLauncherCallbacks != null) {
             return mLauncherCallbacks.hasSettings();
-        } else {
-            // On devices with a locked orientation, we will at least have the allow rotation
-            // setting.
-            return !getResources().getBoolean(R.bool.allow_rotation);
         }
+        return true;
     }
 
     public void addToCustomContentPage(View customContent,
