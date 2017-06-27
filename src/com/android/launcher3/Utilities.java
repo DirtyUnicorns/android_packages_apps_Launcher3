@@ -161,14 +161,6 @@ public final class Utilities {
                 getAllowRotationDefaultValue(context));
     }
 
-    public static boolean isShowSearchBar(Context context) {
-        return getPrefs(context).getBoolean(SHOW_SEARCH_BAR_PREFERENCE_KEY, FeatureFlags.QSB_ON_FIRST_SCREEN);
-    }
-
-    public static void updateShowSearchBar(Context context, boolean enable) {
-        getPrefs(context).edit().putBoolean(SHOW_SEARCH_BAR_PREFERENCE_KEY, enable);
-    }
-
     public static boolean getAllowRotationDefaultValue(Context context) {
         if (isNycOrAbove()) {
             // If the device was scaled, used the original dimensions to determine if rotation
@@ -181,12 +173,12 @@ public final class Utilities {
         return false;
     }
 
-    public static boolean isPredictAppsEnabled(Context context) {
-        return getPrefs(context).getBoolean(PREDICTIVE_APPS_PREFERENCE_KEY, true);
+    public static boolean isShowSearchBar(Context context) {
+        return getPrefs(context).getBoolean(SHOW_SEARCH_BAR_PREFERENCE_KEY, FeatureFlags.QSB_ON_FIRST_SCREEN);
     }
 
-    public static void updatePredictApps(Context context, boolean enable) {
-        getPrefs(context).edit().putBoolean(PREDICTIVE_APPS_PREFERENCE_KEY, enable);
+    public static boolean isPredictAppsEnabled(Context context) {
+        return getPrefs(context).getBoolean(PREDICTIVE_APPS_PREFERENCE_KEY, false);
     }
 
     public static Bitmap createIconBitmap(Cursor c, int iconIndex, Context context) {

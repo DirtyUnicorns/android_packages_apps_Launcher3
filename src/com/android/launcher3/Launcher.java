@@ -393,7 +393,7 @@ public class Launcher extends Activity
         }
 
         mShowPredictiveApps = Utilities.isPredictAppsEnabled(getApplicationContext());
-        setupPredictiveAppProvider();
+        setupPredictiveAppProvider(mShowPredictiveApps);
 
         if (mLauncherCallbacks != null) {
             mLauncherCallbacks.preOnCreate();
@@ -488,10 +488,14 @@ public class Launcher extends Activity
         }
     }
 
-    private void setupPredictiveAppProvider() {
-        if (mShowPredictiveApps && mPredictiveAppsProvider == null) {
-             mPredictiveAppsProvider = new PredictiveAppsProvider(getApplicationContext());
-        }
+    private void setupPredictiveAppProvider(boolean enable) {
+        if (enable) {
+             if (mPredictiveAppsProvider == null) {
+                 mPredictiveAppsProvider = new PredictiveAppsProvider(getApplicationContext());
+             }
+        } else {
+             mPredictiveAppsProvider = null;
+        }        
     }
 
     @Override
@@ -4525,15 +4529,16 @@ public class Launcher extends Activity
                 SharedPreferences sharedPreferences, String key) {
             if (Utilities.ALLOW_ROTATION_PREFERENCE_KEY.equals(key)) {
                 mRotationEnabled = Utilities.isAllowRotationPrefEnabled(getApplicationContext());
-            } else if (Utilities.SHOW_SEARCH_BAR_PREFERENCE_KEY.equals(key)) {
+            }
+            if (Utilities.SHOW_SEARCH_BAR_PREFERENCE_KEY.equals(key)) {
                 mShowSearchBar = Utilities.isShowSearchBar(getApplicationContext());
-            } else if (Utilities.PREDICTIVE_APPS_PREFERENCE_KEY.equals(key)) {
+            }
+            if (Utilities.PREDICTIVE_APPS_PREFERENCE_KEY.equals(key)) {
                 mShowPredictiveApps = Utilities.isPredictAppsEnabled(getApplicationContext());
             }
             if (!waitUntilResume(this, true)) {
                 run();
             }
-
         }
 
         @Override
@@ -4541,12 +4546,8 @@ public class Launcher extends Activity
             if (mRotationEnabled) {
                 setOrientation();
             }
-            if (mShowSearchBar) {
-                mWorkspace.updateQsbVisibility(mShowSearchBar);
-            }
-            if (mShowPredictiveApps) {
-                setupPredictiveAppProvider();
-            }
+            mWorkspace.updateQsbVisibility(mShowSearchBar);
+            setupPredictiveAppProvider(mShowPredictiveApps);
         }
     }
 }
