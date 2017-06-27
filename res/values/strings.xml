@@ -161,9 +161,12 @@
     <!-- Text explaining that rotation is disabled in Display settings. 'Display' refers to the Display section in system settings [CHAR LIMIT=100] -->
     <string name="allow_rotation_blocked_desc">Current Display setting doesn\'t permit rotation</string>
     <string name="search_bar_title">Show search bar</string>
-    <string name="icon_pack">Icon Pack</string>
-    <string name="icon_pack_summary">Select an icon Pack</string>
     <string name="show_predictive_apps_title">Predictive apps</string>
+
+    <!-- Strings for icon pack preference -->
+    <string name="icon_pack">Icon pack</string>
+    <string name="icon_pack_summary">Select an icon pack</string>
+    <string name="default_iconpack_title">Default icons</string>
 
     <!-- Label on an icon that references an uninstalled package, for which we have no information about when it might be installed. [CHAR_LIMIT=15] -->
     <string name="package_state_unknown">Unknown</string>
