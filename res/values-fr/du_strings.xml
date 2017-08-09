@@ -26,4 +26,7 @@
     <string name="icon_pack">Paquet d\'icônes</string>
     <string name="icon_pack_summary">Sélectionner un pack d\'icônes</string>
     <string name="default_iconpack_title">Icônes par défaut</string>
+
+    <!-- Folder titles -->
+    <string name="play_folder_title">Play</string>
 </resources>
