@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+* Copyright (C) 2008 The Android Open Source Project
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*      http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+-->
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Strings for settings -->
+
+    <!-- home_category -->
+    <string name="home_category_title">Écran d\'accueil</string>
+    <string name="auto_add_shortcuts_label">Icônes ajoutées automatiquement</string>
+    <string name="auto_add_shortcuts_description">Ajouter automatiquement les icônes des applications nouvellement installées sur l\'écran d\'accueil</string>
+    <string name="allow_rotation_title">Orientation de l\'écran</string>
+    <string name="allow_rotation_desc">Autoriser la rotation automatique de l\'écran d\'accueil lors du pivotement de l\'appareil</string>
+    <string name="title_show_google_app">Application Google</string>
+    <string name="title_google_app">Application Google</string>
+    <string name="msg_minus_one_on_left">Afficher le panneau de l\'application Google sur l\'écran d\'accueil le plus à gauche</string>
+
+    <!-- app_drawer_category -->
+    <string name="app_drawer_category_title">Tiroir d\'applications</string>
+    <string name="title_app_suggestions">Suggestions d\'applications</string>
+    <string name="summary_app_suggestions">Afficher les suggestions d\'applications en haut du tiroir d\'applications</string>
+
+    <!-- Hidden app -->
+    <string name="hide_app">Masquage des applications</string>
+    <string name="hide_app_sum">Masquer des applications dans le tiroir d\'applications</string>
+    <string name="hide_app_selected">&#160;sélectionnée(s)</string>
+    <string name="hidden_app">Toutes les applications</string>
+    <string name="hide_selected">Masquer les applications sélectionnées</string>
+    <string name="more">Plus</string>
+    <string name="reset_hidden_apps">Réinitialiser</string>
+    <string name="reset_hidden_apps_done">Les applications précédemment masquées sont maintenant disponibles</string>
+
+    <!-- icon_category -->
+    <string name="icon_category_title">Icônes d\'application</string>
+    <string name="icon_shape_override_label">Apparence des icônes</string>
+    <string name="icon_shape_system_default">Valeur système par défaut</string>
+    <string name="icon_shape_square">Carré</string>
+    <string name="icon_shape_squircle">Carrercle</string>
+    <string name="icon_shape_circle">Cercle</string>
+    <string name="icon_shape_teardrop">Goutte</string>
+    <string name="icon_shape_override_progress">Modification en cours</string>
+    <string name="pref_icon_pack">Paquet d\'icônes</string>
+    <string name="state_loading">Modification en cours</string>
+
+    <!-- widget_category -->
+    <string name="widget_category_title">Widgets</string>
+    <string name="smartspace_preferences_in_settings">Widget \"En bref\"</string>
+    <string name="smartspace_preferences_in_settings_desc">Régler le widget \"En bref\" disposé en haut de l\'écran d\'accueil affichant différentes informations</string>
+
+
+    <string name="msg_missing_notification_access">Pour afficher les pastilles de notification, activer les notifications de l\'application <xliff:g id="NAME">%1$s</xliff:g></string>
+    <string name="abandoned_promise_explanation">L\'application correspondant à cette icône n\'est pas installée. Supprimer cette icône, ou installer l\'application correspondante.</string>
+    <string name="long_press_widget_to_add">Appui prolongé pour sélectionner un widget</string>
+    <string name="long_accessible_way_to_add">Double appui et maintien pour sélectionner widget ou utiliser les actions personnalisées</string>
+    <string name="add_item_request_drag_hint">Appui prolongé pour placer l\'élément manuellement</string>
+    <string name="folder_tap_to_close">Appuyer pour fermer le dossier</string>
+    <string name="folder_tap_to_rename">Appuyer pour enregistrer le nouveau nom du dossier</string>
+    <string name="msg_disabled_by_admin">Désactivé par l\'administrateur</string>
+    <string name="settings_button_text">Paramètres</string>
+    <string name="smartspace_preferences">Préférences</string>
+    <string name="label_search">Rechercher</string>
+    <string name="label_voice_search">Recherche vocale</string>
+    <string name="about">À propos</string>
+    <string name="about_app_version">Version</string>
+    <string name="app_name_pixel_launcher">Pixel Launcher</string>
+    <string name="title_disable_suggestions_prompt">Désactiver les suggestions d\'applications ?</string>
+    <string name="msg_disable_suggestions_prompt">Les suggestions d\'applications ne s\'afficheront plus en haut du tiroir d\'applications, et les données d\'utilisation utilisées pour les créer seront supprimées définitivement.</string>
+    <string name="label_turn_off_suggestions">DÉSACTIVER</string>
+
+    <!-- About -->
+    <string name="about_credits">Crédits</string>
+    <string name="about_credits_ok">OK</string>
+    <string name="about_amirzaidi_title">Amir Zaidi</string>
+    <string name="about_amirzaidi_summary">Rétro-ingénierie et portage des fonctionnalités de \"Pixel Launcher\" sur Launcher 3</string>
+
+</resources>
