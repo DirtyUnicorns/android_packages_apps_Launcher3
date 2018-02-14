@@ -89,4 +89,7 @@
     <string name="about_amirzaidi_title">Amir Zaidi</string>
     <string name="about_amirzaidi_summary">Rétro-ingénierie et portage des fonctionnalités de \"Pixel Launcher\" sur Launcher 3</string>
 
+    <string name="show_swipeup_arrow">Indicateur de déploiement</string>
+    <string name="show_swipeup_arrow_summary">Afficher la flèche d\'ouverture par glissement du menu des applications au-dessus du Dock</string>
+
 </resources>
