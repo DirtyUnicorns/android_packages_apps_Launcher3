@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- 
+<!--
 /*
 * Copyright (C) 2008 The Android Open Source Project
 *
@@ -146,4 +146,17 @@
     <string name="title_disable_suggestions_prompt">おすすめのアプリを非表示にしますか？</string>
     <string name="msg_disable_suggestions_prompt">おすすめがアプリリストの上部に表示されなくなり、おすすめの作成に使用される利用データが完全に消去されます。</string>
     <string name="label_turn_off_suggestions">非表示にする</string>
+
+    <!-- Hidden app -->
+    <string name="hide_app">表示しないアプリ</string>
+    <string name="hide_app_sum">アプリドロワーに表示しないアプリを選択</string>
+    <string name="hide_app_selected">&#160;選択されています</string>
+    <string name="hidden_app">全てのアプリ</string>
+    <string name="hide_selected">選択されたアプリを表示しない</string>
+    <string name="more">さらに表示</string>
+    <string name="reset_hidden_apps">全て初期状態に戻す</string>
+    <string name="reset_hidden_apps_done">全ての非表示のアプリが利用可能になりました</string>
+
+    <string name="show_swipeup_arrow">スワイプアップインジケーターを有効にする</string>
+    <string name="show_swipeup_arrow_summary">ドックの上にスワイプの上向き矢印インジケータを表示する</string>
 </resources>
