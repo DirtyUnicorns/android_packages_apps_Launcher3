@@ -362,6 +362,14 @@
     <string name="reset_hidden_apps">Reset all</string>
     <string name="reset_hidden_apps_done">Hidden apps are now available</string>
 
-    <string name="show_swipeup_arrow">Enable swipe up indicator</string>
+    <!-- Swipe up indicator -->
+    <string name="show_swipeup_arrow">Swipe up indicator</string>
     <string name="show_swipeup_arrow_summary">Show the swipe up arrow indicator on top of the dock</string>
+
+    <!-- Hide/Show search bars -->
+    <string name="bottom_search_bar_title">Bottom search bar</string>
+    <string name="bottom_search_bar_summary">Show the bottom search bar at the bottom of the dock</string>
+    <string name="top_search_bar_title">Top search bar</string>
+    <string name="top_search_bar_summary">Show the bottom search at the top of the app drawer</string>
+
 </resources>
