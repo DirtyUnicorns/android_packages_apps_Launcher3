@@ -24,7 +24,7 @@
     <!-- home_category -->
     <string name="home_category_title">Écran d\'accueil</string>
     <string name="auto_add_shortcuts_label">Icônes ajoutées automatiquement</string>
-    <string name="auto_add_shortcuts_description">Ajouter automatiquement les icônes des applications nouvellement installées sur l\'écran d\'accueil</string>
+    <string name="auto_add_shortcuts_description">Ajouter automatiquement les icônes des applications nouvellement installées</string>
     <string name="allow_rotation_title">Orientation de l\'écran</string>
     <string name="allow_rotation_desc">Autoriser la rotation automatique de l\'écran d\'accueil lors du pivotement de l\'appareil</string>
     <string name="title_show_google_app">Application Google</string>
@@ -34,11 +34,11 @@
     <!-- app_drawer_category -->
     <string name="app_drawer_category_title">Tiroir d\'applications</string>
     <string name="title_app_suggestions">Suggestions d\'applications</string>
-    <string name="summary_app_suggestions">Afficher les suggestions d\'applications en haut du tiroir d\'applications</string>
+    <string name="summary_app_suggestions">Afficher les suggestions d\'applications en haut</string>
 
     <!-- Hidden app -->
     <string name="hide_app">Masquage des applications</string>
-    <string name="hide_app_sum">Masquer des applications dans le tiroir d\'applications</string>
+    <string name="hide_app_sum">Masquer des applications</string>
     <string name="hide_app_selected">&#160;sélectionnée(s)</string>
     <string name="hidden_app">Toutes les applications</string>
     <string name="hide_selected">Masquer les applications sélectionnées</string>
@@ -91,5 +91,11 @@
 
     <string name="show_swipeup_arrow">Indicateur de déploiement</string>
     <string name="show_swipeup_arrow_summary">Afficher la flèche d\'ouverture par glissement du menu des applications au-dessus du Dock</string>
+
+    <!-- Hide/Show search bars -->
+    <string name="bottom_search_bar_title">Barre de recherche inférieure</string>
+    <string name="bottom_search_bar_summary">Afficher la barre de recherche inférieure en dessous du Dock</string>
+    <string name="top_search_bar_title">Barre de recherche supérieure</string>
+    <string name="top_search_bar_summary">Afficher la barre de recherche supérieure en haut</string>
 
 </resources>
