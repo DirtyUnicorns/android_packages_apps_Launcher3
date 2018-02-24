@@ -1,5 +1,7 @@
 package com.google.android.apps.nexuslauncher;
 
+import static com.android.launcher3.Utilities.getDevicePrefs;
+
 import android.annotation.SuppressLint;
 import android.app.AlarmManager;
 import android.app.AlertDialog;
@@ -16,6 +18,7 @@ import android.content.pm.PackageManager;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.SystemClock;
+import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.PreferenceFragment;
 import android.preference.PreferenceScreen;
@@ -42,6 +45,7 @@ public class SettingsActivity extends com.android.launcher3.SettingsActivity imp
     public final static String SHOW_PREDICTIONS_PREF = "pref_show_predictions";
     public final static String ENABLE_MINUS_ONE_PREF = "pref_enable_minus_one";
     public final static String SMARTSPACE_PREF = "pref_smartspace";
+    public static final String KEY_SHOW_WEATHER_CLOCK = "pref_show_clock_weather";
 
     private static final String GOOGLE_NOW_PACKAGE = "com.google.android.googlequicksearchbox";
 
@@ -75,6 +79,7 @@ public class SettingsActivity extends com.android.launcher3.SettingsActivity imp
         private SwitchPreference mAppSuggestions;
         private SwitchPreference mGoogleNowPanel;
         private PreferenceScreen mAtGlanceWidget;
+        private ListPreference mShowClockWeather;
 
         @Override
         public void onCreate(Bundle bundle) {
@@ -86,6 +91,7 @@ public class SettingsActivity extends com.android.launcher3.SettingsActivity imp
             mAppSuggestions = (SwitchPreference) findPreference(SHOW_PREDICTIONS_PREF);
             mGoogleNowPanel = (SwitchPreference) findPreference(ENABLE_MINUS_ONE_PREF);
             mAtGlanceWidget = (PreferenceScreen) findPreference(SMARTSPACE_PREF);
+            mShowClockWeather = (ListPreference) findPreference(KEY_SHOW_WEATHER_CLOCK);
 
             findPreference(Utilities.BOTTOM_SEARCH_BAR_KEY).setOnPreferenceChangeListener(this);
             findPreference(Utilities.TOP_SEARCH_BAR_KEY).setOnPreferenceChangeListener(this);
@@ -104,8 +110,11 @@ public class SettingsActivity extends com.android.launcher3.SettingsActivity imp
                 mAtGlanceWidget.setOnPreferenceClickListener(this);
             }
 
+            mShowClockWeather.setValue(getDevicePrefs(mContext).getString(KEY_SHOW_WEATHER_CLOCK, "0"));
+
             mIconPackPref.setOnPreferenceChangeListener(this);
             mAppSuggestions.setOnPreferenceChangeListener(this);
+            mShowClockWeather.setOnPreferenceChangeListener(this);
 
             setHasOptionsMenu(true);
         }
@@ -222,6 +231,11 @@ public class SettingsActivity extends com.android.launcher3.SettingsActivity imp
                         ((TwoStatePreference) preference).setChecked((boolean) newValue);
                     }
                     reloadTheme(mContext);
+                    break;
+                case KEY_SHOW_WEATHER_CLOCK:
+                    String value = (String) newValue;
+                    getDevicePrefs(mContext).edit().putString(KEY_SHOW_WEATHER_CLOCK, value).commit();
+                    mShowClockWeather.setValue(value);
                     break;
             }
             return false;
