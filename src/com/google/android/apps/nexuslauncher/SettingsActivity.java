@@ -236,6 +236,7 @@ public class SettingsActivity extends com.android.launcher3.SettingsActivity imp
                     String value = (String) newValue;
                     getDevicePrefs(mContext).edit().putString(KEY_SHOW_WEATHER_CLOCK, value).commit();
                     mShowClockWeather.setValue(value);
+                    restart(mContext);
                     break;
             }
             return false;
