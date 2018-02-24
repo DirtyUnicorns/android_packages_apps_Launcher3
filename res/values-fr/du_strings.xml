@@ -63,6 +63,8 @@
     <string name="smartspace_preferences_in_settings">Widget \"En bref\"</string>
     <string name="smartspace_preferences_in_settings_desc">Régler le widget \"En bref\" disposé en haut de l\'écran d\'accueil affichant différentes informations</string>
 
+    <string name="other_category_title">Divers</string>
+    <string name="other_category_summary">Autres réglages</string>
 
     <string name="msg_missing_notification_access">Pour afficher les pastilles de notification, activer les notifications de l\'application <xliff:g id="NAME">%1$s</xliff:g></string>
     <string name="abandoned_promise_explanation">L\'application correspondant à cette icône n\'est pas installée. Supprimer cette icône, ou installer l\'application correspondante.</string>
@@ -97,5 +99,25 @@
     <string name="bottom_search_bar_summary">Afficher la barre de recherche inférieure en dessous du Dock</string>
     <string name="top_search_bar_title">Barre de recherche supérieure</string>
     <string name="top_search_bar_summary">Afficher la barre de recherche supérieure en haut</string>
+
+    <!-- Home screen date and weather -->
+    <string name="pref_show_clock_weather">Date et météo</string>
+    <string name="pref_show_clock_weather_both">Afficher la date et la météo</string>
+    <string name="pref_show_clock_weather_nothing">Masquer</string>
+    <string name="pref_show_clock_weather_clock_only">Afficher la date uniquement</string>
+    <string name="pref_show_clock_weather_weather_only">Afficher la météo uniquement</string>
+
+    <!-- Grid size -->
+    <string name="grid_category_title">Colonnes et lignes</string>
+    <string name="number_of_columns_title">Nombre de colonnes</string>
+    <string name="number_of_rows_title">Nombre de lignes</string>
+    <string name="number_of_hotseat_title">Nombre d\'icônes de la zone des favoris</string>
+
+    <string name="num_default">Par défaut</string>
+    <string name="num_three">Trois</string>
+    <string name="num_four">Quatre</string>
+    <string name="num_five">Cinq</string>
+    <string name="num_six">Six</string>
+    <string name="num_seven">Sept</string>
 
 </resources>
