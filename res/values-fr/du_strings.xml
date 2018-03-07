@@ -120,4 +120,21 @@
     <string name="num_six">Six</string>
     <string name="num_seven">Sept</string>
 
+    <!-- Icon pack -->
+    <string name="default_iconpack_title">Par défaut</string>
+    <string name="icons_pack_name">Paquet d\'icônes</string>
+    <string name="edit_drop_target_label">Modifier</string>
+    <string name="edit_app">Modifier</string>
+    <string name="reset_icon">Réinitialiser</string>
+    <string name="customize">Personnaliser</string>
+    <string name="visual">Visuel</string>
+    <string name="all_icons">Toutes les icônes</string>
+    <string name="similar_icons">Icônes similaires</string>
+    <string name="ok">OK</string>
+    <string name="icon_label">libellé</string>
+    <string name="loading">Chargement en cours</string>
+    <string name="icon_chooser">Sélecteur d\'icône</string>
+    <string name="icon_search">Rechercher des icônes</string>
+    <string name="action_edit">Modifier</string>
+
 </resources>
