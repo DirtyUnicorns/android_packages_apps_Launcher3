@@ -322,6 +322,10 @@ public class AllAppsTransitionController implements TouchController, SwipeDetect
         return mDetector.isDraggingOrSettling();
     }
 
+    public boolean isDragging() {
+        return mDetector.isDraggingState();
+    }
+
     /**
      * @param start {@code true} if start of new drag.
      */
