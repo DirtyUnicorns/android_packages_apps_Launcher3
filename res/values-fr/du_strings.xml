@@ -136,5 +136,6 @@
     <string name="icon_chooser">Sélecteur d\'icône</string>
     <string name="icon_search">Rechercher des icônes</string>
     <string name="action_edit">Modifier</string>
+    <string name="icon_pack_updated">Le pack d\'icônes du lanceur d\'application a été mis à jour, de nouvelles icônes pour les applications sont peut-être disponibles.</string>
 
 </resources>
