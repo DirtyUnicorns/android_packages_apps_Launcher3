@@ -299,7 +299,7 @@
   <string name="hide_app_selected">&#160;выбрано</string>
   <string name="hidden_app">Все приложения</string>
   <string name="hide_selected">Скрыть выбранное(ые) приложение(я)</string>
-  <string name="more">More</string>
+  <string name="more">Ещё</string>
   <string name="reset_hidden_apps">Сбросить всё</string>
   <string name="reset_hidden_apps_done">Скрытые приложения теперь доступны</string>
   <!-- Swipe up indicator -->
