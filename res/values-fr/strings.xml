@@ -25,7 +25,7 @@
   <!-- Default folder name -->
   <string name="folder_name"></string>
   <!-- Work folder name -->
-  <string name="work_folder_name">Android Work</string>
+  <string name="work_folder_name">Professionnel</string>
   <!-- Displayed when user selects a shortcut for an app that was uninstalled [CHAR_LIMIT=none]-->
   <string name="activity_not_found">L\'application n\'est pas installée</string>
   <!-- Displayed when user selects a shortcut for an app that is current not available [CHAR_LIMIT=none]-->
@@ -123,9 +123,9 @@
   <!-- The format string for when a folder is opened, speaks the dimensions -->
   <string name="folder_opened">Dossier ouvert, <xliff:g id="WIDTH">%1$d</xliff:g> par <xliff:g id="HEIGHT">%2$d</xliff:g></string>
   <!-- Instruction that clicking outside will close folder -->
-  <string name="folder_tap_to_close">Appuyez pour fermer le dossier</string>
+  <string name="folder_tap_to_close">Appuyer pour fermer le dossier</string>
   <!-- Instruction that clicking outside will commit folder rename -->
-  <string name="folder_tap_to_rename">Appuyez pour enregistrer le nouveau nom du dossier</string>
+  <string name="folder_tap_to_rename">Appuyer pour enregistrer le nouveau nom du dossier</string>
   <!-- Indication that folder closed -->
   <string name="folder_closed">Dossier fermé</string>
   <!-- Folder renamed format -->
@@ -165,21 +165,21 @@
   <!-- Label for the setting that allows the automatic placement of launcher shortcuts for applications and games installed on the device [CHAR LIMIT=40] -->
   <string name="auto_add_shortcuts_label">Ajouter l\'icône à l\'écran d\'accueil</string>
   <!-- Text description of the setting that allows the automatic placement of launcher shortcuts for applications and games installed on the device [CHAR LIMIT=NONE] -->
-  <string name="auto_add_shortcuts_description">Pour les applications récemment installées</string>
+  <string name="auto_add_shortcuts_description">Ajouter automatiquement les icônes des applications nouvellement installées</string>
   <!-- Developer setting to change the shape of icons on home screen. [CHAR LIMIT=50] -->
-  <string name="icon_shape_override_label">Changer la forme des icônes</string>
+  <string name="icon_shape_override_label">Apparence des icônes</string>
   <!-- Option to not change the icon shape on home screen and use the system default setting instead. [CHAR LIMIT=50] -->
-  <string name="icon_shape_system_default">Utiliser les paramètres par défaut</string>
+  <string name="icon_shape_system_default">Valeur système par défaut</string>
   <!-- Option to change the shape of the home screen icons to a square. [CHAR LIMIT=50] -->
   <string name="icon_shape_square">Carré</string>
   <!-- Option to change the shape of the home screen icons to a squircle. This represents the name of the shape somewhere between a circle and a square. [CHAR LIMIT=50] -->
-  <string name="icon_shape_squircle">Carrecle</string>
+  <string name="icon_shape_squircle">Carrercle</string>
   <!-- Option to change the shape of the home screen icons to a circle. [CHAR LIMIT=50] -->
   <string name="icon_shape_circle">Cercle</string>
   <!-- Option to change the shape of the home screen icons to a teardrop. This represents the name of the shape similar to a circle with with the bottom right corner pushed out like a square [CHAR LIMIT=50] -->
-  <string name="icon_shape_teardrop">Larme</string>
+  <string name="icon_shape_teardrop">Goutte</string>
   <!-- Message shown in the progress dialog when the icon shape override is being applied [CHAR LIMIT=100]-->
-  <string name="icon_shape_override_progress">Appliquer les changements de forme</string>
+  <string name="icon_shape_override_progress">Modification en cours</string>
   <!-- Label on an icon that references an uninstalled package, for which we have no information about when it might be installed. [CHAR_LIMIT=15] -->
   <string name="package_state_unknown">Inconnu</string>
   <!-- Button for abandoned promises dialog, to removes this abandoned promise icon. -->
@@ -259,19 +259,19 @@
   <string name="notification_dismissed">Notification ignorée</string>
   <string name="icu_abbrev_wday_month_day_no_year">EEEMMMd</string>
   <string name="smartspace_preferences">Préférences</string>
-  <string name="label_search">Recherche</string>
+  <string name="label_search">Rechercher</string>
   <string name="label_voice_search">Recherche vocale</string>
   <string name="default_live_wallpaper">com.breel.wallpapers/com.breel.wallpapers.dioramas.lagos.LagosWallpaperService</string>
-  <string name="pref_icon_pack">Pack d\'icônes</string>
+  <string name="pref_icon_pack">Paquet d\'icônes</string>
   <string name="state_loading">Modification en cours</string>
   <string name="smartspace_preferences_in_settings">Widget \"En bref\"</string>
   <string name="smartspace_preferences_in_settings_desc">Régler le widget \"En bref\" disposé en haut de l\'écran d\'accueil affichant différentes informations</string>
   <string name="smartspace_hours_mins">%1$s %2$s</string>
   <string name="title_show_google_app">%1$s</string>
   <string name="pref_show_google_now_summary">@string/msg_minus_one_on_left</string>
-  <string name="msg_minus_one_on_left">Balayez vers la droite sur l’écran d’accueil pour accéder au panneau Google Now</string>
+  <string name="msg_minus_one_on_left">Afficher le panneau de l\'application Google sur l\'écran d\'accueil le plus à gauche</string>
   <string name="about">À propos</string>
-  <string name="title_google_app">Panneau Google Now</string>
+  <string name="title_google_app">Application Google</string>
   <string name="title_app_suggestions">Suggestions d\'applications</string>
   <string name="summary_app_suggestions">Afficher les suggestions d\'applications en haut</string>
   <string name="about_app_version">Version</string>
@@ -285,7 +285,7 @@
   <string name="app_drawer_category_title">Tiroir d\'applications</string>
   <string name="icon_category_title">Icônes d\'application</string>
   <string name="widget_category_title">Widgets</string>
-  <string name="other_category_title">Autre</string>
+  <string name="other_category_title">Divers</string>
   <string name="other_category_summary">Autres réglages</string>
   <!-- About -->
   <string name="about_credits">Crédits</string>
@@ -314,8 +314,8 @@
   <string name="pref_show_clock_weather">Date et météo</string>
   <string name="pref_show_clock_weather_both">Afficher la date et la météo</string>
   <string name="pref_show_clock_weather_nothing">Masquer</string>
-  <string name="pref_show_clock_weather_clock_only">N\'afficher que la date</string>
-  <string name="pref_show_clock_weather_weather_only">N\'afficher que la météo</string>
+  <string name="pref_show_clock_weather_clock_only">Afficher la date uniquement</string>
+  <string name="pref_show_clock_weather_weather_only">Afficher la météo uniquement</string>
   <!-- Grid layout -->
   <string name="num_default">Par défaut</string>
   <string name="num_three">Trois</string>
@@ -324,13 +324,13 @@
   <string name="num_six">Six</string>
   <string name="num_seven">Sept</string>
   <string name="grid_category_title">Colonnes et lignes</string>
-  <string name="number_of_columns_title">Colonnes de la grille</string>
-  <string name="number_of_rows_title">Lignes de grille</string>
+  <string name="number_of_columns_title">Nombre de colonnes</string>
+  <string name="number_of_rows_title">Nombre de lignes</string>
   <string name="number_of_hotseat_title">Nombre d\'icônes de la zone des favoris</string>
   <string name="icon_shape_rounded_square">Carré arrondi</string>
   <!-- Icon pack -->
   <string name="default_iconpack_title">Par défaut</string>
-  <string name="icons_pack_name">Pack d\'icônes</string>
+  <string name="icons_pack_name">Paquet d\'icônes</string>
   <string name="edit_drop_target_label">Modifier</string>
   <string name="edit_app">Modifier</string>
   <string name="reset_icon">Réinitialiser</string>
@@ -338,11 +338,11 @@
   <string name="visual">Visuel</string>
   <string name="all_icons">Toutes les icônes</string>
   <string name="similar_icons">Icônes similaires</string>
-  <string name="ok">Ok</string>
+  <string name="ok">OK</string>
   <string name="icon_label">Libellé</string>
-  <string name="loading">Chargement, veuillez patienter</string>
-  <string name="icon_chooser">Sélecteur d\'icônes</string>
+  <string name="loading">Chargement en cours</string>
+  <string name="icon_chooser">Sélecteur d\'icône</string>
   <string name="icon_search">Rechercher des icônes</string>
   <string name="action_edit">Modifier</string>
-  <string name="icon_pack_updated">Le pack d\'icônes de votre launcher a été mis à jour, de nouvelles icône pourraient être disponibles pour nos applications.</string>
+  <string name="icon_pack_updated">Le paquet d\'icônes du lanceur d\'application a été mis à jour. De nouvelles icônes pour les applications sont peut-être disponibles.</string>
 </resources>
