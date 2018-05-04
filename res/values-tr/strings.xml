@@ -329,8 +329,8 @@
   <string name="num_six">Altı</string>
   <string name="num_seven">Yedi</string>
   <string name="grid_category_title">Sütunlar ve satırlar</string>
-  <string name="number_of_columns_title">Izgara sütunları</string>
-  <string name="number_of_rows_title">Izgara satırları</string>
+  <string name="number_of_columns_title">Klavuz sütunları</string>
+  <string name="number_of_rows_title">Klavuz satırları</string>
   <string name="number_of_hotseat_title">En çok kullanılan simgeler</string>
   <string name="icon_shape_rounded_square">Yuvarlatılmış kare</string>
   <!-- Icon pack -->

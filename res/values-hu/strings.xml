@@ -250,7 +250,7 @@
   <!-- Accessibility action to show quick actions menu for an icon. [CHAR_LIMIT=30] -->
   <string name="action_deep_shortcut">Gyorsparancsok</string>
   <!-- Accessibility description for the shortcuts menu shown for an app. -->
-  <string name="shortcuts_menu_description"><xliff:g id="NUMBER_OF_SHORTCUTS">%1$d</xliff:g> gyorsparancs a(z) <xliff:g id="APP_NAME">%2$s</xliff:g> számára</string>
+  <string name="shortcuts_menu_description"><xliff:g id="number_of_shortcuts" example="3">%1$d</xliff:g> shortcuts for <xliff:g id="app_name" example="Messenger">%2$s</xliff:g></string>
   <!-- Accessibility description when the shortcuts menu has notifications as well as shortcuts. -->
   <string name="shortcuts_menu_with_notifications_description"><xliff:g id="number_of_shortcuts" example="3">%1$d</xliff:g> parancsikon és <xliff:g id="number_of_notifications" example="3">%2$d</xliff:g> értesítés a következő alkalmazásnál: <xliff:g id="app_name" example="Messenger">%3$s</xliff:g></string>
   <!-- Accessibility action to dismiss a notification in the shortcuts menu for an icon. [CHAR_LIMIT=30] -->
