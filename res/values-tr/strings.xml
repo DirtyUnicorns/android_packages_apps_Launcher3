@@ -29,13 +29,13 @@
   <!-- Displayed when user selects a shortcut for an app that was uninstalled [CHAR_LIMIT=none]-->
   <string name="activity_not_found">Uygulama yüklü değil.</string>
   <!-- Displayed when user selects a shortcut for an app that is current not available [CHAR_LIMIT=none]-->
-  <string name="activity_not_available">Uygulama kullanılamıyor</string>
+  <string name="activity_not_available">Uygulama mevcut değil</string>
   <!-- SafeMode shortcut error string -->
   <string name="safemode_shortcut_error">İndirilen uygulama Güvenli modda devre dışı bırakıldı</string>
   <!-- SafeMode widget error string -->
-  <string name="safemode_widget_error">Güvenli modda widget\'lar devre dışı</string>
+  <string name="safemode_widget_error">Güvenli modda widget\'ler devre dışı bırakıldı</string>
   <!-- Message shown when a shortcut is not available. It could have been temporarily disabled and may start working again after some time. -->
-  <string name="shortcut_not_available">Kısayol kullanılamıyor</string>
+  <string name="shortcut_not_available">Kısayol mevcut değil</string>
   <!-- User visible name for the launcher/home screen. [CHAR_LIMIT=30] -->
   <string name="home_screen">Ana ekran</string>
   <!-- Label for showing custom action list of a shortcut or widget. [CHAR_LIMIT=30] -->
@@ -56,7 +56,7 @@
   <string name="place_automatically">Otomatik olarak ekle</string>
   <!-- All Apps -->
   <!-- Search bar text in the apps view. [CHAR_LIMIT=50] -->
-  <string name="all_apps_search_bar_hint">Uygulamalarda ara</string>
+  <string name="all_apps_search_bar_hint">Uygulamalar ara</string>
   <!-- Loading apps text. [CHAR_LIMIT=50] -->
   <string name="all_apps_loading_message">Uygulamalar yükleniyor&#8230;</string>
   <!-- No-search-results text. [CHAR_LIMIT=50] -->
@@ -128,7 +128,7 @@
   <!-- Instruction that clicking outside will close folder -->
   <string name="folder_tap_to_close">Klasörü kapatmak için dokunun</string>
   <!-- Instruction that clicking outside will commit folder rename -->
-  <string name="folder_tap_to_rename">Yeni adın kaydedilmesi için dokunun</string>
+  <string name="folder_tap_to_rename">Yeniden adlandırmayı kaydetmek için dokunun</string>
   <!-- Indication that folder closed -->
   <string name="folder_closed">Klasör kapatıldı</string>
   <!-- Folder renamed format -->
@@ -137,13 +137,13 @@
   <string name="folder_name_format">Klasör: <xliff:g id="name" example="Games">%1$s</xliff:g></string>
   <!-- Strings for the customization mode -->
   <!-- Text for widget add button -->
-  <string name="widget_button_text">Widget\'lar</string>
+  <string name="widget_button_text">Widget\'ler</string>
   <!-- Text for wallpaper change button -->
-  <string name="wallpaper_button_text">Duvar Kağıtları</string>
+  <string name="wallpaper_button_text">Duvar kağıtları</string>
   <!-- Text for settings button -->
   <string name="settings_button_text">Ayarlar</string>
   <!-- Message shown when a feature is disabled by the administrator -->
-  <string name="msg_disabled_by_admin">Yöneticiniz tarafından devre dışı bırakıldı</string>
+  <string name="msg_disabled_by_admin">Yönetici tarafından devre dışı bırakıldı</string>
   <!-- Text for custom accessibility action to go to the overview mode, where users can look and change the overall UI of the launcher. -->
   <string name="accessibility_action_overview">Genel bakış</string>
   <!-- Strings for settings -->
@@ -227,7 +227,7 @@
   <!-- Accessibility description to move item into an existing folder containing an app. -->
   <string name="add_to_folder_with_app"><xliff:g id="name" example="Messenger">%1$s</xliff:g> öğesini içeren klasöre ekle</string>
   <!-- Accessibility confirmation for item added to folder. -->
-  <string name="added_to_folder">Öğe, klasöre eklendi</string>
+  <string name="added_to_folder">Öğe klasöre eklendi</string>
   <!-- Accessibility description to create folder with another item. -->
   <string name="create_folder_with">Şu öğeyle klasör oluştur: <xliff:g id="name" example="Game">%1$s</xliff:g></string>
   <!-- Accessibility confirmation for folder created. -->
@@ -299,17 +299,17 @@
   <string name="about_amirzaidi_summary">Launcher 3 üzerine ters mühendislik pixel başlatıcısı özellikleri</string>
   <string name="about_amirzaidi_url">https://github.com/amirzaidi</string>
   <!-- Hidden app -->
-  <string name="hide_app">Uygulamaları gizle</string>
+  <string name="hide_app">Uygulamalar gizle</string>
   <string name="hide_app_sum">Uygulamaları uygulama çekmecesinden gizleyin</string>
   <string name="hide_app_selected">&#160;seçildi</string>
   <string name="hidden_app">Tüm uygulamalar</string>
   <string name="hide_selected">Seçilen uygulamaları gizle</string>
   <string name="more">Daha fazla</string>
   <string name="reset_hidden_apps">Tümünü sıfırla</string>
-  <string name="reset_hidden_apps_done">Gizli uygulamalar artık kullanılabilir</string>
+  <string name="reset_hidden_apps_done">Gizli uygulamalar artık mevcut</string>
   <!-- Swipe up indicator -->
   <string name="show_swipeup_arrow">Yukarı kaydırma göstergesi</string>
-  <string name="show_swipeup_arrow_summary">Alt panelin üst kısmındamhızlı yukarı kaydırma göstergesini göster</string>
+  <string name="show_swipeup_arrow_summary">Alt panelin üst kısmında hızlı yukarı kaydırma göstergesini göster</string>
   <!-- Hide/Show search bars -->
   <string name="bottom_search_bar_title">Alt arama çubuğu</string>
   <string name="bottom_search_bar_summary">Alt panelin altında arama çubuğunu göster</string>
