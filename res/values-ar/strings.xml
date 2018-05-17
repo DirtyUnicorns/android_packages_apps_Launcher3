@@ -291,7 +291,7 @@
   <string name="about_credits">شكر وتقدير</string>
   <string name="about_credits_ok">حسناً</string>
   <string name="about_amirzaidi_title">Amir Zaidi</string>
-  <string name="about_amirzaidi_summary">عكس هندسياً خصائص بكسل لمشغل٣</string>
+  <string name="about_amirzaidi_summary">خصائص مشغل بكسل في Launcher3</string>
   <string name="about_amirzaidi_url">https://github.com/amirzaidi</string>
   <!-- Hidden app -->
   <string name="hide_app">إخفاء تطبيقات</string>
@@ -326,23 +326,23 @@
   <string name="grid_category_title">الأعمدة والصفوف</string>
   <string name="number_of_columns_title">أعمدة الشبكة</string>
   <string name="number_of_rows_title">صفوف الشبكة</string>
-  <string name="number_of_hotseat_title">رموز Hotseat</string>
+  <string name="number_of_hotseat_title">رموز الشريط السفلي</string>
   <string name="icon_shape_rounded_square">مربع مدور</string>
   <!-- Icon pack -->
   <string name="default_iconpack_title">افتراضي</string>
   <string name="icons_pack_name">حزمة أيقونات</string>
   <string name="edit_drop_target_label">تعديل</string>
-  <string name="edit_app">Edit</string>
-  <string name="reset_icon">Reset</string>
-  <string name="customize">Customize</string>
-  <string name="visual">Visual</string>
-  <string name="all_icons">All icons</string>
-  <string name="similar_icons">Similar icons</string>
-  <string name="ok">Ok</string>
-  <string name="icon_label">Label</string>
-  <string name="loading">Loading, please wait</string>
-  <string name="icon_chooser">Icon chooser</string>
-  <string name="icon_search">Search for icons</string>
-  <string name="action_edit">Edit</string>
-  <string name="icon_pack_updated">Your launcher icon pack has been updated, new icons for your apps might be available.</string>
+  <string name="edit_app">تعديل</string>
+  <string name="reset_icon">إعادة تعيين</string>
+  <string name="customize">تخصيص</string>
+  <string name="visual">بصري</string>
+  <string name="all_icons">كافة الأيقونات</string>
+  <string name="similar_icons">أيقونات متشابهة</string>
+  <string name="ok">موافق</string>
+  <string name="icon_label">التسمية</string>
+  <string name="loading">يتم التحميل ، يرجى الانتظار</string>
+  <string name="icon_chooser">محدد الأيقونة</string>
+  <string name="icon_search">البحث عن الأيقونة</string>
+  <string name="action_edit">تعديل</string>
+  <string name="icon_pack_updated">تم تحديث حزمة أيقونات المشغل الخاص بك، أيقونات جديدة للتطبيقات الخاصة بك قد تكون متاحة.</string>
 </resources>
