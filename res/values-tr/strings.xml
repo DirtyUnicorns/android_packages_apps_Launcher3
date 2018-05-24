@@ -56,7 +56,7 @@
   <string name="place_automatically">Otomatik olarak ekle</string>
   <!-- All Apps -->
   <!-- Search bar text in the apps view. [CHAR_LIMIT=50] -->
-  <string name="all_apps_search_bar_hint">Uygulamalar ara</string>
+  <string name="all_apps_search_bar_hint">Uygulamalarda ara</string>
   <!-- Loading apps text. [CHAR_LIMIT=50] -->
   <string name="all_apps_loading_message">Uygulamalar yükleniyor&#8230;</string>
   <!-- No-search-results text. [CHAR_LIMIT=50] -->
@@ -299,14 +299,14 @@
   <string name="about_amirzaidi_summary">Launcher 3 üzerine ters mühendislik pixel başlatıcısı özellikleri</string>
   <string name="about_amirzaidi_url">https://github.com/amirzaidi</string>
   <!-- Hidden app -->
-  <string name="hide_app">Uygulamalar gizle</string>
+  <string name="hide_app">Uygulamaları gizle</string>
   <string name="hide_app_sum">Uygulamaları uygulama çekmecesinden gizleyin</string>
   <string name="hide_app_selected">&#160;seçildi</string>
   <string name="hidden_app">Tüm uygulamalar</string>
   <string name="hide_selected">Seçilen uygulamaları gizle</string>
   <string name="more">Daha fazla</string>
   <string name="reset_hidden_apps">Tümünü sıfırla</string>
-  <string name="reset_hidden_apps_done">Gizli uygulamalar artık mevcut</string>
+  <string name="reset_hidden_apps_done">Gizli uygulamalar artık kullanılabilir</string>
   <!-- Swipe up indicator -->
   <string name="show_swipeup_arrow">Yukarı kaydırma göstergesi</string>
   <string name="show_swipeup_arrow_summary">Alt panelin üst kısmında hızlı yukarı kaydırma göstergesini göster</string>

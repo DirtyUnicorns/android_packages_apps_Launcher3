@@ -71,7 +71,7 @@
   <!-- Error message when user has filled a home screen -->
   <string name="out_of_space">ليس هناك مساحة أخرى في هذه الشاشة الرئيسية.</string>
   <!-- Error message when user has filled the hotseat -->
-  <string name="hotseat_out_of_space">لا يوجد المزيد من الحقول في علبة المفضلة</string>
+  <string name="hotseat_out_of_space">لا يوجد المزيد من الحقول في قائمة المفضلات</string>
   <!-- All applications label -->
   <string name="all_apps_button_label">قائمة التطبيقات</string>
   <!-- Label for button in all applications label to go back home (to the workspace / desktop)
