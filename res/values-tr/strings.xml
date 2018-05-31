@@ -176,7 +176,7 @@
   <!-- Option to change the shape of the home screen icons to a square. [CHAR LIMIT=50] -->
   <string name="icon_shape_square">Kare</string>
   <!-- Option to change the shape of the home screen icons to a squircle. This represents the name of the shape somewhere between a circle and a square. [CHAR LIMIT=50] -->
-  <string name="icon_shape_squircle">Yuvarlatılmış kare</string>
+  <string name="icon_shape_squircle">Köşeli kare</string>
   <!-- Option to change the shape of the home screen icons to a circle. [CHAR LIMIT=50] -->
   <string name="icon_shape_circle">Daire</string>
   <!-- Option to change the shape of the home screen icons to a teardrop. This represents the name of the shape similar to a circle with with the bottom right corner pushed out like a square [CHAR LIMIT=50] -->

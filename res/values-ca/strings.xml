@@ -134,7 +134,7 @@
   <string name="folder_name_format">Carpeta: <xliff:g id="NAME">%1$s</xliff:g></string>
   <!-- Strings for the customization mode -->
   <!-- Text for widget add button -->
-  <string name="widget_button_text">Widgets</string>
+  <string name="widget_button_text">Ginys</string>
   <!-- Text for wallpaper change button -->
   <string name="wallpaper_button_text">Fons de pantalla</string>
   <!-- Text for settings button -->
@@ -281,68 +281,68 @@
   <string name="msg_disable_suggestions_prompt">"Els suggeriments no es mostraran a la part superior de la llista d'aplicacions, i les dades d'ús utilitzades per crear-los s'esborraran permanentment."</string>
   <string name="label_turn_off_suggestions">DESACTIVA</string>
   <!-- Preference categories -->
-  <string name="home_category_title">Home screen</string>
-  <string name="app_drawer_category_title">App drawer</string>
-  <string name="icon_category_title">App icons</string>
-  <string name="widget_category_title">Widgets</string>
-  <string name="other_category_title">Other</string>
-  <string name="other_category_summary">Miscellaneous configurations</string>
+  <string name="home_category_title">Pantalla d\'inici</string>
+  <string name="app_drawer_category_title">Calaix d\'aplicacions</string>
+  <string name="icon_category_title">Icones de les aplicacions</string>
+  <string name="widget_category_title">Ginys</string>
+  <string name="other_category_title">Altres</string>
+  <string name="other_category_summary">Altres configuracions</string>
   <!-- About -->
-  <string name="about_credits">Credits</string>
-  <string name="about_credits_ok">OK</string>
+  <string name="about_credits">Crèdits</string>
+  <string name="about_credits_ok">D\'acord</string>
   <string name="about_amirzaidi_title">Amir Zaidi</string>
-  <string name="about_amirzaidi_summary">Reverse engineered pixel launcher features onto Launcher 3</string>
+  <string name="about_amirzaidi_summary">Característiques de Pixel Launcher per enginyeria inversa a Launcher 3</string>
   <string name="about_amirzaidi_url">https://github.com/amirzaidi</string>
   <!-- Hidden app -->
-  <string name="hide_app">Hide apps</string>
-  <string name="hide_app_sum">Hide apps from the app drawer</string>
-  <string name="hide_app_selected">&#160;selected</string>
-  <string name="hidden_app">All apps</string>
-  <string name="hide_selected">Hide selected app(s)</string>
-  <string name="more">More</string>
-  <string name="reset_hidden_apps">Reset all</string>
-  <string name="reset_hidden_apps_done">Hidden apps are now available</string>
+  <string name="hide_app">Oculta les aplicacions</string>
+  <string name="hide_app_sum">Oculta les aplicacions del calaix</string>
+  <string name="hide_app_selected">&#160;seleccionat</string>
+  <string name="hidden_app">Totes les aplicacions</string>
+  <string name="hide_selected">Amaga les aplicacions seleccionades</string>
+  <string name="more">Més</string>
+  <string name="reset_hidden_apps">Restablir tot</string>
+  <string name="reset_hidden_apps_done">Les aplicacions ocultes ara estan disponibles</string>
   <!-- Swipe up indicator -->
-  <string name="show_swipeup_arrow">Swipe up indicator</string>
-  <string name="show_swipeup_arrow_summary">Show the swipe up arrow indicator on top of the dock</string>
+  <string name="show_swipeup_arrow">Indicador de desplaçament</string>
+  <string name="show_swipeup_arrow_summary">Mostrar la fletxa de desplaçament sobre el dock</string>
   <!-- Hide/Show search bars -->
-  <string name="bottom_search_bar_title">Bottom search bar</string>
-  <string name="bottom_search_bar_summary">Show the bottom search bar at the bottom of the dock</string>
-  <string name="top_search_bar_title">Top search bar</string>
-  <string name="top_search_bar_summary">Show the bottom search at the top of the app drawer</string>
+  <string name="bottom_search_bar_title">Barra de cerca inferior</string>
+  <string name="bottom_search_bar_summary">Mostra la barra de cerca inferior a la part de baix del dock</string>
+  <string name="top_search_bar_title">Barra de cerca superior</string>
+  <string name="top_search_bar_summary">Mostrar la cerca inferior sobre el calaix d\'aplicacions</string>
   <!-- Weather widget -->
-  <string name="pref_show_clock_weather">Home screen date and weather</string>
-  <string name="pref_show_clock_weather_both">Show both date and weather</string>
-  <string name="pref_show_clock_weather_nothing">Don\'t show</string>
-  <string name="pref_show_clock_weather_clock_only">Show date only</string>
-  <string name="pref_show_clock_weather_weather_only">Show weather only</string>
+  <string name="pref_show_clock_weather">Temps i data a la pantalla d\'inici</string>
+  <string name="pref_show_clock_weather_both">Mostrar la data i el temps</string>
+  <string name="pref_show_clock_weather_nothing">No mostrar</string>
+  <string name="pref_show_clock_weather_clock_only">Mostrar només la data</string>
+  <string name="pref_show_clock_weather_weather_only">Mostrar només el temps</string>
   <!-- Grid layout -->
-  <string name="num_default">Default</string>
-  <string name="num_three">Three</string>
-  <string name="num_four">Four</string>
-  <string name="num_five">Five</string>
-  <string name="num_six">Six</string>
-  <string name="num_seven">Seven</string>
-  <string name="grid_category_title">Columns and rows</string>
-  <string name="number_of_columns_title">Grid columns</string>
-  <string name="number_of_rows_title">Grid rows</string>
-  <string name="number_of_hotseat_title">Hotseat icons</string>
-  <string name="icon_shape_rounded_square">Rounded square</string>
+  <string name="num_default">Predeterminat</string>
+  <string name="num_three">Tres</string>
+  <string name="num_four">Quatre</string>
+  <string name="num_five">Cinc</string>
+  <string name="num_six">Sis</string>
+  <string name="num_seven">Set</string>
+  <string name="grid_category_title">Columnes i files</string>
+  <string name="number_of_columns_title">Columnes de la quadrícula</string>
+  <string name="number_of_rows_title">Files de la quadrícula</string>
+  <string name="number_of_hotseat_title">Icones de l\'espai del dock</string>
+  <string name="icon_shape_rounded_square">Quadrat arrodonit</string>
   <!-- Icon pack -->
-  <string name="default_iconpack_title">Default</string>
-  <string name="icons_pack_name">Icon pack</string>
-  <string name="edit_drop_target_label">Edit</string>
-  <string name="edit_app">Edit</string>
-  <string name="reset_icon">Reset</string>
-  <string name="customize">Customize</string>
+  <string name="default_iconpack_title">Predeterminat</string>
+  <string name="icons_pack_name">Paquet d\'icones</string>
+  <string name="edit_drop_target_label">Editar</string>
+  <string name="edit_app">Editar</string>
+  <string name="reset_icon">Restablir</string>
+  <string name="customize">Personalitzar</string>
   <string name="visual">Visual</string>
-  <string name="all_icons">All icons</string>
-  <string name="similar_icons">Similar icons</string>
-  <string name="ok">Ok</string>
-  <string name="icon_label">Label</string>
-  <string name="loading">Loading, please wait</string>
-  <string name="icon_chooser">Icon chooser</string>
-  <string name="icon_search">Search for icons</string>
-  <string name="action_edit">Edit</string>
-  <string name="icon_pack_updated">Your launcher icon pack has been updated, new icons for your apps might be available.</string>
+  <string name="all_icons">Totes les icones</string>
+  <string name="similar_icons">Icones similars</string>
+  <string name="ok">D\'acord</string>
+  <string name="icon_label">Etiqueta</string>
+  <string name="loading">Carregant, esperi si us plau</string>
+  <string name="icon_chooser">Selector d\'icones</string>
+  <string name="icon_search">Cerca d\'icones</string>
+  <string name="action_edit">Editar</string>
+  <string name="icon_pack_updated">S\'ha actualitzat el paquet d\'icones del llançador, pot trobar disponibles les noves icones d\'aplicacions.</string>
 </resources>

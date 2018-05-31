@@ -21,7 +21,7 @@
   <!-- General -->
   <skip></skip>
   <!-- Application name -->
-  <string name="app_name">Launcher3</string>
+  <string name="app_name">Käynnistin3</string>
   <!-- Default folder name -->
   <string name="folder_name"></string>
   <!-- Work folder name -->
@@ -281,68 +281,68 @@
   <string name="msg_disable_suggestions_prompt">"Ehdotuksia ei näytetä sovellusluettelosi yläosassa. Niiden luomiseen käytetyt tiedot poistetaan pysyvästi."</string>
   <string name="label_turn_off_suggestions">POISTA KÄYTÖSTÄ</string>
   <!-- Preference categories -->
-  <string name="home_category_title">Home screen</string>
-  <string name="app_drawer_category_title">App drawer</string>
-  <string name="icon_category_title">App icons</string>
-  <string name="widget_category_title">Widgets</string>
-  <string name="other_category_title">Other</string>
-  <string name="other_category_summary">Miscellaneous configurations</string>
+  <string name="home_category_title">Aloitusnäyttö</string>
+  <string name="app_drawer_category_title">Sovellusvalikko</string>
+  <string name="icon_category_title">Sovelluksen kuvake</string>
+  <string name="widget_category_title">Widgetit</string>
+  <string name="other_category_title">Muu</string>
+  <string name="other_category_summary">Sekalaiset asetukset</string>
   <!-- About -->
-  <string name="about_credits">Credits</string>
+  <string name="about_credits">Tekijät</string>
   <string name="about_credits_ok">OK</string>
   <string name="about_amirzaidi_title">Amir Zaidi</string>
-  <string name="about_amirzaidi_summary">Reverse engineered pixel launcher features onto Launcher 3</string>
+  <string name="about_amirzaidi_summary">Takaisinmallinnetut pixel-käynnistimen toiminnot Käynnistin 3:seen</string>
   <string name="about_amirzaidi_url">https://github.com/amirzaidi</string>
   <!-- Hidden app -->
-  <string name="hide_app">Hide apps</string>
-  <string name="hide_app_sum">Hide apps from the app drawer</string>
-  <string name="hide_app_selected">&#160;selected</string>
-  <string name="hidden_app">All apps</string>
-  <string name="hide_selected">Hide selected app(s)</string>
-  <string name="more">More</string>
-  <string name="reset_hidden_apps">Reset all</string>
-  <string name="reset_hidden_apps_done">Hidden apps are now available</string>
+  <string name="hide_app">Piilota sovellukset</string>
+  <string name="hide_app_sum">Piilota sovelluksia sovellusvalikosta</string>
+  <string name="hide_app_selected">&#160;valittu</string>
+  <string name="hidden_app">Kaikki sovellukset</string>
+  <string name="hide_selected">Piilota valittu sovellus(sovellukset)</string>
+  <string name="more">Lisää</string>
+  <string name="reset_hidden_apps">Nollaa kaikki</string>
+  <string name="reset_hidden_apps_done">Piilotetut sovellukset ovat nyt saatavilla</string>
   <!-- Swipe up indicator -->
-  <string name="show_swipeup_arrow">Swipe up indicator</string>
-  <string name="show_swipeup_arrow_summary">Show the swipe up arrow indicator on top of the dock</string>
+  <string name="show_swipeup_arrow">Ylöspäin pyyhkäisyn ilmaisin</string>
+  <string name="show_swipeup_arrow_summary">Näytä ylöspäin pyyhkäisyn ilmaisin telakan ylälaidassa</string>
   <!-- Hide/Show search bars -->
-  <string name="bottom_search_bar_title">Bottom search bar</string>
-  <string name="bottom_search_bar_summary">Show the bottom search bar at the bottom of the dock</string>
-  <string name="top_search_bar_title">Top search bar</string>
-  <string name="top_search_bar_summary">Show the bottom search at the top of the app drawer</string>
+  <string name="bottom_search_bar_title">Alalaidan hakupalkki</string>
+  <string name="bottom_search_bar_summary">Näyttää hakupalkin telakan alalaidassa</string>
+  <string name="top_search_bar_title">Ylälaidan hakupalkki</string>
+  <string name="top_search_bar_summary">Näyttää hakupalkin sovelluslistan ylälaidassa</string>
   <!-- Weather widget -->
-  <string name="pref_show_clock_weather">Home screen date and weather</string>
-  <string name="pref_show_clock_weather_both">Show both date and weather</string>
-  <string name="pref_show_clock_weather_nothing">Don\'t show</string>
-  <string name="pref_show_clock_weather_clock_only">Show date only</string>
-  <string name="pref_show_clock_weather_weather_only">Show weather only</string>
+  <string name="pref_show_clock_weather">Kotinäytön päivämäärä ja aika</string>
+  <string name="pref_show_clock_weather_both">Näytä molemmat päivämäärä ja sää</string>
+  <string name="pref_show_clock_weather_nothing">Älä näytä</string>
+  <string name="pref_show_clock_weather_clock_only">Näytä vain päivämäärä</string>
+  <string name="pref_show_clock_weather_weather_only">Näytä vain sää</string>
   <!-- Grid layout -->
-  <string name="num_default">Default</string>
-  <string name="num_three">Three</string>
-  <string name="num_four">Four</string>
-  <string name="num_five">Five</string>
-  <string name="num_six">Six</string>
-  <string name="num_seven">Seven</string>
-  <string name="grid_category_title">Columns and rows</string>
-  <string name="number_of_columns_title">Grid columns</string>
-  <string name="number_of_rows_title">Grid rows</string>
-  <string name="number_of_hotseat_title">Hotseat icons</string>
-  <string name="icon_shape_rounded_square">Rounded square</string>
+  <string name="num_default">Oletus</string>
+  <string name="num_three">Kolme</string>
+  <string name="num_four">Neljä</string>
+  <string name="num_five">Viisi</string>
+  <string name="num_six">Kuusi</string>
+  <string name="num_seven">Seitsemän</string>
+  <string name="grid_category_title">Kolumnit ja rivit</string>
+  <string name="number_of_columns_title">Ruudukon sarakkeet</string>
+  <string name="number_of_rows_title">Ruudukon rivit</string>
+  <string name="number_of_hotseat_title">Hotseatin kuvakkeet</string>
+  <string name="icon_shape_rounded_square">Pyöristetty neliö</string>
   <!-- Icon pack -->
-  <string name="default_iconpack_title">Default</string>
-  <string name="icons_pack_name">Icon pack</string>
-  <string name="edit_drop_target_label">Edit</string>
-  <string name="edit_app">Edit</string>
-  <string name="reset_icon">Reset</string>
-  <string name="customize">Customize</string>
-  <string name="visual">Visual</string>
-  <string name="all_icons">All icons</string>
-  <string name="similar_icons">Similar icons</string>
+  <string name="default_iconpack_title">Oletus</string>
+  <string name="icons_pack_name">Kuvakepaketti</string>
+  <string name="edit_drop_target_label">Muokkaa</string>
+  <string name="edit_app">Muokkaa</string>
+  <string name="reset_icon">Nollaa</string>
+  <string name="customize">Muokkaa</string>
+  <string name="visual">Ulkoasu</string>
+  <string name="all_icons">Kaikki kuvakkeet</string>
+  <string name="similar_icons">Samanlaiset kuvakkeet</string>
   <string name="ok">Ok</string>
-  <string name="icon_label">Label</string>
-  <string name="loading">Loading, please wait</string>
-  <string name="icon_chooser">Icon chooser</string>
-  <string name="icon_search">Search for icons</string>
-  <string name="action_edit">Edit</string>
-  <string name="icon_pack_updated">Your launcher icon pack has been updated, new icons for your apps might be available.</string>
+  <string name="icon_label">Tunniste</string>
+  <string name="loading">Ladataan, odota hetki</string>
+  <string name="icon_chooser">Kuvakkeen valitsin</string>
+  <string name="icon_search">Etsi kuvakkeita</string>
+  <string name="action_edit">Muokkaa</string>
+  <string name="icon_pack_updated">Käynnistimesi kuvakepaketti on päivitetty, sovelluksillesi saattaa olla saatavissa uusia kuvakkeita.</string>
 </resources>
