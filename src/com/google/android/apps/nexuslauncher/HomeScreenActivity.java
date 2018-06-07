@@ -31,6 +31,8 @@ import android.provider.Settings;
 import android.text.TextUtils;
 import android.view.MenuItem;
 
+import com.android.internal.util.du.Utils;
+
 import com.android.launcher3.LauncherFiles;
 import com.android.launcher3.LauncherModel;
 import com.android.launcher3.R;
@@ -104,7 +106,7 @@ public class HomeScreenActivity extends com.android.launcher3.SettingsActivity i
             findPreference(Utilities.HOTSEAT_ICONS).setOnPreferenceChangeListener(this);
 
             mGoogleNowPanel.setTitle(getDisplayGoogleTitle());
-            if (!isPackageInstalled(GOOGLE_NOW_PACKAGE, mContext)) {
+            if (!Utils.isPackageInstalled(mContext, GOOGLE_NOW_PACKAGE)) {
                 mGoogleNowPanel.setEnabled(false);
                 mGoogleNowPanel.setSelectable(false);
                 mAtGlanceWidget.setEnabled(false);
@@ -137,16 +139,6 @@ public class HomeScreenActivity extends com.android.launcher3.SettingsActivity i
                 charSequence = mContext.getString(R.string.title_google_app);
             }
             return mContext.getString(R.string.title_show_google_app, charSequence);
-        }
-
-        private boolean isPackageInstalled(String package_name, Context context) {
-            try {
-                PackageManager pm = context.getPackageManager();
-                pm.getPackageInfo(package_name, PackageManager.GET_ACTIVITIES);
-                return true;
-            } catch (Exception e) {
-                return false;
-            }
         }
 
         @Override
