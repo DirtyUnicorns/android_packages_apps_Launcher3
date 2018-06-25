@@ -346,6 +346,7 @@
     <string name="app_drawer_category_title">App drawer</string>
     <string name="icon_category_title">App icons</string>
     <string name="widget_category_title">Widgets</string>
+    <string name="gestures_category_title">Gestures</string>
     <string name="other_category_title">Other</string>
     <string name="other_category_summary">Miscellaneous configurations</string>
 
@@ -414,4 +415,11 @@
     <string name="icon_search">Search for icons</string>
     <string name="action_edit">Edit</string>
     <string name="icon_pack_updated">Your launcher icon pack has been updated, new icons for your apps might be available.</string>
+
+    <!-- Homescreen double tap gesture -->
+    <string name="pref_homescreen_dt_gestures_title">Double tap gesture</string>
+    <string name="pref_homescreen_dt_gestures_summary">Select the action of the double tap gesture on the homescreen</string>
+    <string name="pref_homescreen_dt_gestures_none">None</string>
+    <string name="pref_homescreen_dt_gestures_sleep">Sleep</string>
+    <string name="pref_homescreen_dt_gestures_torch">Flashlight</string>
 </resources>

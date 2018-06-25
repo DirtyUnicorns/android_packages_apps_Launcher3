@@ -19,6 +19,7 @@
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
+    <!-- Columns -->
     <string-array name="grid_names">
         <item>@string/num_default</item>
         <item>@string/num_three</item>
@@ -35,6 +36,34 @@
         <item>five</item>
         <item>six</item>
         <item>seven</item>
+    </string-array>
+
+    <!-- Weather widget -->
+    <string-array translatable="false" name="pref_show_clock_weather_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="pref_show_clock_weather_names">
+        <item>@string/pref_show_clock_weather_both</item>
+        <item>@string/pref_show_clock_weather_nothing</item>
+        <item>@string/pref_show_clock_weather_clock_only</item>
+        <item>@string/pref_show_clock_weather_weather_only</item>
+    </string-array>
+
+    <!-- Homescreen double tap gestures -->
+    <string-array translatable="false" name="pref_homescreen_dt_gestures_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="pref_homescreen_dt_gestures_names">
+        <item>@string/pref_homescreen_dt_gestures_none</item>
+        <item>@string/pref_homescreen_dt_gestures_sleep</item>
+        <item>@string/pref_homescreen_dt_gestures_torch</item>
     </string-array>
 
 </resources>
