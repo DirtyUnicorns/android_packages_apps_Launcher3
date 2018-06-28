@@ -304,10 +304,10 @@
   <string name="reset_hidden_apps_done">隐藏当前可用的应用</string>
   <!-- Swipe up indicator -->
   <string name="show_swipeup_arrow">向上滑动指示器</string>
-  <string name="show_swipeup_arrow_summary">在Dock顶部显示箭头标示</string>
+  <string name="show_swipeup_arrow_summary">在托盘顶部显示向上滑动箭头标示</string>
   <!-- Hide/Show search bars -->
   <string name="bottom_search_bar_title">底部搜索栏</string>
-  <string name="bottom_search_bar_summary">在Dock底部显示底部搜索栏</string>
+  <string name="bottom_search_bar_summary">在托盘底部显示底部搜索栏</string>
   <string name="top_search_bar_title">顶部搜索栏</string>
   <string name="top_search_bar_summary">在应用抽屉的顶部显示底部搜索栏</string>
   <!-- Weather widget -->
@@ -324,8 +324,8 @@
   <string name="num_six">6</string>
   <string name="num_seven">7</string>
   <string name="grid_category_title">行数和列数</string>
-  <string name="number_of_columns_title">网格列</string>
-  <string name="number_of_rows_title">网格行</string>
+  <string name="number_of_columns_title">网格列数</string>
+  <string name="number_of_rows_title">网格行数</string>
   <string name="number_of_hotseat_title">最常用应用的图标</string>
   <string name="icon_shape_rounded_square">圆角方形</string>
   <!-- Icon pack -->
