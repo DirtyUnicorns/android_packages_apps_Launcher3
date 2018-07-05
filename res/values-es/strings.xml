@@ -285,6 +285,7 @@
   <string name="app_drawer_category_title">Cajón de aplicaciones</string>
   <string name="icon_category_title">Iconos de las aplicaciones</string>
   <string name="widget_category_title">Widgets</string>
+  <string name="gestures_category_title">Gestos</string>
   <string name="other_category_title">Otros</string>
   <string name="other_category_summary">Otras configuraciones</string>
   <!-- About -->
@@ -345,4 +346,10 @@
   <string name="icon_search">Búsqueda de iconos</string>
   <string name="action_edit">Editar</string>
   <string name="icon_pack_updated">El paquete de iconos del lanzador ha sido actualizado, puedes encontrar disponibles nuevos iconos para tus aplicaciones.</string>
+  <!-- Homescreen double tap gesture -->
+  <string name="pref_homescreen_dt_gestures_title">Doble toque</string>
+  <string name="pref_homescreen_dt_gestures_summary">Seleccione la acción de doble toque en la pantalla de inicio</string>
+  <string name="pref_homescreen_dt_gestures_none">Ninguno</string>
+  <string name="pref_homescreen_dt_gestures_sleep">Suspender</string>
+  <string name="pref_homescreen_dt_gestures_torch">Linterna</string>
 </resources>

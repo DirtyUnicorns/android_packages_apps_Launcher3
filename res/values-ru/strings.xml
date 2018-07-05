@@ -285,6 +285,7 @@
   <string name="app_drawer_category_title">Меню приложений</string>
   <string name="icon_category_title">Иконки приложений</string>
   <string name="widget_category_title">Виджеты</string>
+  <string name="gestures_category_title">Жесты</string>
   <string name="other_category_title">Другое</string>
   <string name="other_category_summary">Другие настройки</string>
   <!-- About -->
@@ -345,4 +346,10 @@
   <string name="icon_search">Найти иконки</string>
   <string name="action_edit">Изменить</string>
   <string name="icon_pack_updated">Пакет иконок для вашего лаунчера был обновлён, могут быть доступны новые иконки.</string>
+  <!-- Homescreen double tap gesture -->
+  <string name="pref_homescreen_dt_gestures_title">Жесты двойного касания</string>
+  <string name="pref_homescreen_dt_gestures_summary">Выберите действие жест двойной кран на homescreen</string>
+  <string name="pref_homescreen_dt_gestures_none">Ничего</string>
+  <string name="pref_homescreen_dt_gestures_sleep">Выключить экран</string>
+  <string name="pref_homescreen_dt_gestures_torch">Фонарик</string>
 </resources>

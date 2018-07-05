@@ -264,8 +264,8 @@
   <string name="default_live_wallpaper">com.breel.wallpapers/com.breel.wallpapers.dioramas.lagos.LagosWallpaperService</string>
   <string name="pref_icon_pack">Icon Pack</string>
   <string name="state_loading">Anwenden…</string>
-  <string name="smartspace_preferences_in_settings">Überblick</string>
-  <string name="smartspace_preferences_in_settings_desc">Oben auf deinem Startbildschirm</string>
+  <string name="smartspace_preferences_in_settings">Überblick-Widget</string>
+  <string name="smartspace_preferences_in_settings_desc">Widget, welches sich im oberen Bereich des Startbildschirm zur Anzeige einiger Ereignisse befindet, anpassen</string>
   <string name="smartspace_hours_mins">%1$s %2$s</string>
   <string name="title_show_google_app">%1$s anzeigen</string>
   <string name="pref_show_google_now_summary">@string/msg_minus_one_on_left</string>
@@ -285,6 +285,7 @@
   <string name="app_drawer_category_title">App-Übersicht</string>
   <string name="icon_category_title">App-Symbole</string>
   <string name="widget_category_title">Widgets</string>
+  <string name="gestures_category_title">Gesten</string>
   <string name="other_category_title">Sonstiges</string>
   <string name="other_category_summary">Verschiedene Einstellungen</string>
   <!-- About -->
@@ -345,4 +346,10 @@
   <string name="icon_search">Nach Symbolen suchen</string>
   <string name="action_edit">Bearbeiten</string>
   <string name="icon_pack_updated">Ihr Launcher-Icon-Pack wurde aktualisiert, neue Icons für Ihre Anwendungen sind möglicherweise verfügbar.</string>
+  <!-- Homescreen double tap gesture -->
+  <string name="pref_homescreen_dt_gestures_title">Doppeltipp-Geste</string>
+  <string name="pref_homescreen_dt_gestures_summary">Wählen Sie die Aktion der Doppeltipp-Geste auf dem Homescreen</string>
+  <string name="pref_homescreen_dt_gestures_none">Keine</string>
+  <string name="pref_homescreen_dt_gestures_sleep">Ruhezustand</string>
+  <string name="pref_homescreen_dt_gestures_torch">Taschenlampe</string>
 </resources>

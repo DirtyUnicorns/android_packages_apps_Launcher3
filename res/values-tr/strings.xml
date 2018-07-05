@@ -290,6 +290,7 @@
   <string name="app_drawer_category_title">Uygulama çekmecesi</string>
   <string name="icon_category_title">Uygulama simgesi</string>
   <string name="widget_category_title">Widget\'lar</string>
+  <string name="gestures_category_title">Hareketler</string>
   <string name="other_category_title">Diğer</string>
   <string name="other_category_summary">Çeşitli yapılandırmalar</string>
   <!-- About -->
@@ -350,4 +351,10 @@
   <string name="icon_search">Simgeleri ara</string>
   <string name="action_edit">Düzenle</string>
   <string name="icon_pack_updated">Başlatıcı simge paketiniz güncellendi, uygulamalarınız için yeni simgeler mevcut olabilir.</string>
+  <!-- Homescreen double tap gesture -->
+  <string name="pref_homescreen_dt_gestures_title">Çift dokunma hareketi</string>
+  <string name="pref_homescreen_dt_gestures_summary">Ana ekrana çift dokunma hareketi için eylem seçin</string>
+  <string name="pref_homescreen_dt_gestures_none">Hiçbiri</string>
+  <string name="pref_homescreen_dt_gestures_sleep">Uyut</string>
+  <string name="pref_homescreen_dt_gestures_torch">El feneri</string>
 </resources>

@@ -285,6 +285,7 @@
   <string name="app_drawer_category_title">Alkalmazásfiók</string>
   <string name="icon_category_title">Alkalmazásikonok</string>
   <string name="widget_category_title">Modulok</string>
+  <string name="gestures_category_title">Gesztusok</string>
   <string name="other_category_title">Egyebek</string>
   <string name="other_category_summary">Vegyes konfigurációk</string>
   <!-- About -->
@@ -345,4 +346,10 @@
   <string name="icon_search">Ikonok keresése</string>
   <string name="action_edit">Szerkesztés</string>
   <string name="icon_pack_updated">Az Ön főképernyőjének ikoncsomagja frissítésre került, nézze meg, hogy mely alkalmazásaihoz érhetők el új ikonok.</string>
+  <!-- Homescreen double tap gesture -->
+  <string name="pref_homescreen_dt_gestures_title">Dupla érintéses gesztusok</string>
+  <string name="pref_homescreen_dt_gestures_summary">Válasszon műveletet a kezdőlap dupla érintéses gesztusához</string>
+  <string name="pref_homescreen_dt_gestures_none">Nincs</string>
+  <string name="pref_homescreen_dt_gestures_sleep">Alvó mód</string>
+  <string name="pref_homescreen_dt_gestures_torch">Zseblámpa</string>
 </resources>

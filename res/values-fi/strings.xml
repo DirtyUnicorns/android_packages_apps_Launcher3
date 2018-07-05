@@ -285,6 +285,7 @@
   <string name="app_drawer_category_title">Sovellusvalikko</string>
   <string name="icon_category_title">Sovelluksen kuvake</string>
   <string name="widget_category_title">Widgetit</string>
+  <string name="gestures_category_title">Gestures</string>
   <string name="other_category_title">Muu</string>
   <string name="other_category_summary">Sekalaiset asetukset</string>
   <!-- About -->
@@ -345,4 +346,10 @@
   <string name="icon_search">Etsi kuvakkeita</string>
   <string name="action_edit">Muokkaa</string>
   <string name="icon_pack_updated">Käynnistimesi kuvakepaketti on päivitetty, sovelluksillesi saattaa olla saatavissa uusia kuvakkeita.</string>
+  <!-- Homescreen double tap gesture -->
+  <string name="pref_homescreen_dt_gestures_title">Double tap gesture</string>
+  <string name="pref_homescreen_dt_gestures_summary">Select the action of the double tap gesture on the homescreen</string>
+  <string name="pref_homescreen_dt_gestures_none">None</string>
+  <string name="pref_homescreen_dt_gestures_sleep">Sleep</string>
+  <string name="pref_homescreen_dt_gestures_torch">Flashlight</string>
 </resources>

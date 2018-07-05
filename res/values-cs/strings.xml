@@ -285,6 +285,7 @@
   <string name="app_drawer_category_title">Seznam aplikací</string>
   <string name="icon_category_title">Ikony aplikací</string>
   <string name="widget_category_title">Widgety</string>
+  <string name="gestures_category_title">Gesta</string>
   <string name="other_category_title">Další</string>
   <string name="other_category_summary">Různé konfigurace</string>
   <!-- About -->
@@ -345,4 +346,10 @@
   <string name="icon_search">Vyhledávání ikon</string>
   <string name="action_edit">Upravit</string>
   <string name="icon_pack_updated">Váš balíček ikon spouštěče byl aktualizován, nové ikony pro vaše aplikace mohou být k dispozici.</string>
+  <!-- Homescreen double tap gesture -->
+  <string name="pref_homescreen_dt_gestures_title">Gesto dvojím poklepáním</string>
+  <string name="pref_homescreen_dt_gestures_summary">Vyberte gesto dvojím poklepáním na domovskou obrazovku</string>
+  <string name="pref_homescreen_dt_gestures_none">Žádné</string>
+  <string name="pref_homescreen_dt_gestures_sleep">Uspat</string>
+  <string name="pref_homescreen_dt_gestures_torch">Svítilna</string>
 </resources>

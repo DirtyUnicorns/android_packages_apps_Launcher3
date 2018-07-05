@@ -285,6 +285,7 @@
   <string name="app_drawer_category_title">应用抽屉</string>
   <string name="icon_category_title">应用程序图标</string>
   <string name="widget_category_title">小部件</string>
+  <string name="gestures_category_title">手势</string>
   <string name="other_category_title">其他</string>
   <string name="other_category_summary">杂项配置</string>
   <!-- About -->
@@ -345,4 +346,10 @@
   <string name="icon_search">搜索图标</string>
   <string name="action_edit">编辑</string>
   <string name="icon_pack_updated">您的启动器图标包已更新, 您的应用程序的新图标可能生效。</string>
+  <!-- Homescreen double tap gesture -->
+  <string name="pref_homescreen_dt_gestures_title">双击手势</string>
+  <string name="pref_homescreen_dt_gestures_summary">选择主屏幕双击手势操作</string>
+  <string name="pref_homescreen_dt_gestures_none">无</string>
+  <string name="pref_homescreen_dt_gestures_sleep">关屏</string>
+  <string name="pref_homescreen_dt_gestures_torch">手电筒</string>
 </resources>

@@ -285,6 +285,7 @@
   <string name="app_drawer_category_title">Drawer applicazioni</string>
   <string name="icon_category_title">Icone app</string>
   <string name="widget_category_title">Widget</string>
+  <string name="gestures_category_title">Gesti</string>
   <string name="other_category_title">Altro</string>
   <string name="other_category_summary">Altre impostazioni</string>
   <!-- About -->
@@ -345,4 +346,10 @@
   <string name="icon_search">Cerca icone</string>
   <string name="action_edit">Modifica</string>
   <string name="icon_pack_updated">Il tuo pacchetto icone è stato aggiornato, potrebbero essere disponibili nuove icone per le tue app.</string>
+  <!-- Homescreen double tap gesture -->
+  <string name="pref_homescreen_dt_gestures_title">Gesto doppio tocco</string>
+  <string name="pref_homescreen_dt_gestures_summary">Seleziona l\'azione del doppio tocco sulla schermata principale</string>
+  <string name="pref_homescreen_dt_gestures_none">Nessuna</string>
+  <string name="pref_homescreen_dt_gestures_sleep">Sospendi</string>
+  <string name="pref_homescreen_dt_gestures_torch">Torcia</string>
 </resources>

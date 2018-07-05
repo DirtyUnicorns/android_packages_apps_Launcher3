@@ -285,6 +285,7 @@
   <string name="app_drawer_category_title">درج التطبيقات</string>
   <string name="icon_category_title">أيقونة البرنامج</string>
   <string name="widget_category_title">تطبيقات مصغّرة</string>
+  <string name="gestures_category_title">الإيماءات</string>
   <string name="other_category_title">أخرى</string>
   <string name="other_category_summary">تعديلات متنوعة</string>
   <!-- About -->
@@ -345,4 +346,10 @@
   <string name="icon_search">البحث عن الأيقونة</string>
   <string name="action_edit">تعديل</string>
   <string name="icon_pack_updated">تم تحديث حزمة أيقونات المشغل الخاص بك، أيقونات جديدة للتطبيقات الخاصة بك قد تكون متاحة.</string>
+  <!-- Homescreen double tap gesture -->
+  <string name="pref_homescreen_dt_gestures_title">إيماءة الضغط المزدوج</string>
+  <string name="pref_homescreen_dt_gestures_summary">حدد إجراء إيماءة الضغط المزدوج على الشاشة الرئيسية</string>
+  <string name="pref_homescreen_dt_gestures_none">لا شيء</string>
+  <string name="pref_homescreen_dt_gestures_sleep">السكون</string>
+  <string name="pref_homescreen_dt_gestures_torch">الكشاف</string>
 </resources>
