@@ -2,25 +2,14 @@ package com.google.android.apps.nexuslauncher;
 
 import static com.android.launcher3.Utilities.getDevicePrefs;
 
-import android.annotation.SuppressLint;
 import android.app.ActionBar;
-import android.app.Activity;
-import android.app.AlarmManager;
-import android.app.AlertDialog;
-import android.app.Dialog;
 import android.app.DialogFragment;
 import android.app.Fragment;
-import android.app.FragmentTransaction;
-import android.app.PendingIntent;
 import android.app.ProgressDialog;
-import android.content.ContentResolver;
 import android.content.Context;
-import android.content.DialogInterface;
-import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.res.Resources;
 import android.os.Bundle;
-import android.os.SystemClock;
 import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.PreferenceFragment;
@@ -51,6 +40,8 @@ public class HomeScreenActivity extends com.android.launcher3.SettingsActivity i
     private static final String GOOGLE_NOW_PACKAGE = "com.google.android.googlequicksearchbox";
 
     private static final long WAIT_BEFORE_RESTART = 250;
+
+    static boolean restartNeeded = false;
 
     @Override
     protected void onCreate(final Bundle bundle) {
@@ -91,7 +82,7 @@ public class HomeScreenActivity extends com.android.launcher3.SettingsActivity i
 
             mContext = getActivity();
 
-            ContentResolver resolver = getActivity().getContentResolver();
+            getActivity().getContentResolver();
 
             actionBar=getActivity().getActionBar();
             assert actionBar != null;
@@ -127,6 +118,14 @@ public class HomeScreenActivity extends com.android.launcher3.SettingsActivity i
 
             mHomescreenGestures.setValue(getDevicePrefs(mContext).getString(KEY_HOMESCREEN_DT_GESTURES, "0"));
             mHomescreenGestures.setOnPreferenceChangeListener(this);
+
+            HomeKeyWatcher mHomeKeyListener = new HomeKeyWatcher(getActivity());
+            mHomeKeyListener.setOnHomePressedListener(() -> {
+                if (restartNeeded) {
+                    restart(mContext);
+                }
+            });
+            mHomeKeyListener.startWatch();
         }
 
         private String getDisplayGoogleTitle() {
@@ -154,6 +153,9 @@ public class HomeScreenActivity extends com.android.launcher3.SettingsActivity i
         @Override
         public void onDestroy() {
             super.onDestroy();
+            if (restartNeeded) {
+                restart(mContext);
+            }
         }
 
         @Override
@@ -163,19 +165,19 @@ public class HomeScreenActivity extends com.android.launcher3.SettingsActivity i
                     if (preference instanceof TwoStatePreference) {
                         ((TwoStatePreference) preference).setChecked((boolean) newValue);
                     }
-                    restart(mContext);
+                    restartNeeded = true;
                     break;
                 case KEY_SHOW_WEATHER_CLOCK:
                     String value = (String) newValue;
                     getDevicePrefs(mContext).edit().putString(KEY_SHOW_WEATHER_CLOCK, value).commit();
                     mShowClockWeather.setValue(value);
-                    restart(mContext);
+                    restartNeeded = true;
                     break;
                 case KEY_HOMESCREEN_DT_GESTURES:
                     String gestureValue = (String) newValue;
                     getDevicePrefs(mContext).edit().putString(KEY_HOMESCREEN_DT_GESTURES, gestureValue).commit();
                     mHomescreenGestures.setValue(gestureValue);
-                    restart(mContext);
+                    restartNeeded = true;
                     break;
                 case Utilities.GRID_COLUMNS:
                 case Utilities.GRID_ROWS:
@@ -183,7 +185,7 @@ public class HomeScreenActivity extends com.android.launcher3.SettingsActivity i
                     if (preference instanceof ListPreference) {
                         ((ListPreference) preference).setValue((String) newValue);
                     }
-                    restart(mContext);
+                    restartNeeded = true;
                     break;
             }
             return false;
@@ -201,26 +203,13 @@ public class HomeScreenActivity extends com.android.launcher3.SettingsActivity i
 
     public static void restart(final Context context) {
         ProgressDialog.show(context, null, context.getString(R.string.state_loading), true, false);
-        new LooperExecutor(LauncherModel.getWorkerLooper()).execute(new Runnable() {
-            @SuppressLint("ApplySharedPref")
-            @Override
-            public void run() {
-                try {
-                    Thread.sleep(WAIT_BEFORE_RESTART);
-                } catch (Exception e) {
-                }
-
-                Intent intent = new Intent(Intent.ACTION_MAIN)
-                        .addCategory(Intent.CATEGORY_HOME)
-                        .setPackage(context.getPackageName())
-                        .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-
-                PendingIntent pendingIntent = PendingIntent.getActivity(context, 0, intent, PendingIntent.FLAG_CANCEL_CURRENT | PendingIntent.FLAG_ONE_SHOT);
-                AlarmManager alarmManager = (AlarmManager) context.getSystemService(Context.ALARM_SERVICE);
-                alarmManager.setExact(AlarmManager.ELAPSED_REALTIME, SystemClock.elapsedRealtime() + 50, pendingIntent);
-
-                android.os.Process.killProcess(android.os.Process.myPid());
+        new LooperExecutor(LauncherModel.getWorkerLooper()).execute(() -> {
+            try {
+                Thread.sleep(WAIT_BEFORE_RESTART);
+            } catch (Exception ignored) {
             }
+
+            android.os.Process.killProcess(android.os.Process.myPid());
         });
     }
 
