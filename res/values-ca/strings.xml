@@ -285,7 +285,7 @@
   <string name="app_drawer_category_title">Calaix d\'aplicacions</string>
   <string name="icon_category_title">Icones de les aplicacions</string>
   <string name="widget_category_title">Ginys</string>
-  <string name="gestures_category_title">Gestures</string>
+  <string name="gestures_category_title">Gestos</string>
   <string name="other_category_title">Altres</string>
   <string name="other_category_summary">Altres configuracions</string>
   <!-- About -->
@@ -347,9 +347,9 @@
   <string name="action_edit">Editar</string>
   <string name="icon_pack_updated">S\'ha actualitzat el paquet d\'icones del llançador, pot trobar disponibles les noves icones d\'aplicacions.</string>
   <!-- Homescreen double tap gesture -->
-  <string name="pref_homescreen_dt_gestures_title">Double tap gesture</string>
-  <string name="pref_homescreen_dt_gestures_summary">Select the action of the double tap gesture on the homescreen</string>
-  <string name="pref_homescreen_dt_gestures_none">None</string>
-  <string name="pref_homescreen_dt_gestures_sleep">Sleep</string>
-  <string name="pref_homescreen_dt_gestures_torch">Flashlight</string>
+  <string name="pref_homescreen_dt_gestures_title">Gest de doble toc</string>
+  <string name="pref_homescreen_dt_gestures_summary">Selecciona l\'acció de doble toc a la pantalla d\'inici</string>
+  <string name="pref_homescreen_dt_gestures_none">Cap</string>
+  <string name="pref_homescreen_dt_gestures_sleep">Repòs</string>
+  <string name="pref_homescreen_dt_gestures_torch">Llanterna</string>
 </resources>

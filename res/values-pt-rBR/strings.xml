@@ -287,7 +287,7 @@
   <string name="app_drawer_category_title">Gaveta de apps</string>
   <string name="icon_category_title">Ícone do Aplicativo</string>
   <string name="widget_category_title">Widgets</string>
-  <string name="gestures_category_title">Gestures</string>
+  <string name="gestures_category_title">Gestos</string>
   <string name="other_category_title">Outros</string>
   <string name="other_category_summary">Configurações diversas</string>
   <!-- About -->
@@ -349,9 +349,9 @@
   <string name="action_edit">Editar</string>
   <string name="icon_pack_updated">Seu pacote de ícone foi atualizado, novos ícones para seus aplicativos podem estar disponíveis.</string>
   <!-- Homescreen double tap gesture -->
-  <string name="pref_homescreen_dt_gestures_title">Double tap gesture</string>
-  <string name="pref_homescreen_dt_gestures_summary">Select the action of the double tap gesture on the homescreen</string>
-  <string name="pref_homescreen_dt_gestures_none">None</string>
-  <string name="pref_homescreen_dt_gestures_sleep">Sleep</string>
-  <string name="pref_homescreen_dt_gestures_torch">Flashlight</string>
+  <string name="pref_homescreen_dt_gestures_title">Gestos toque duplo</string>
+  <string name="pref_homescreen_dt_gestures_summary">Selecione a ação do gesto duplo toque na tela inicial</string>
+  <string name="pref_homescreen_dt_gestures_none">Nenhum</string>
+  <string name="pref_homescreen_dt_gestures_sleep">Dormir</string>
+  <string name="pref_homescreen_dt_gestures_torch">Lanterna</string>
 </resources>

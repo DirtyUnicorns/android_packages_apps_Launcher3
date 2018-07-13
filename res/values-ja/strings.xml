@@ -27,11 +27,11 @@
   <!-- Work folder name -->
   <string name="work_folder_name">仕事用</string>
   <!-- Displayed when user selects a shortcut for an app that was uninstalled [CHAR_LIMIT=none]-->
-  <string name="activity_not_found">このアプリはインストールされていません。</string>
+  <string name="activity_not_found">アプリがインストールされていません</string>
   <!-- Displayed when user selects a shortcut for an app that is current not available [CHAR_LIMIT=none]-->
   <string name="activity_not_available">このアプリは使用できません</string>
   <!-- SafeMode shortcut error string -->
-  <string name="safemode_shortcut_error">ダウンロードしたアプリは、セーフモードでは無効です</string>
+  <string name="safemode_shortcut_error">ダウンロードしたアプリはセーフモードでは無効です</string>
   <!-- SafeMode widget error string -->
   <string name="safemode_widget_error">セーフモードではウィジェットは無効です</string>
   <!-- Message shown when a shortcut is not available. It could have been temporarily disabled and may start working again after some time. -->
@@ -39,19 +39,19 @@
   <!-- User visible name for the launcher/home screen. [CHAR_LIMIT=30] -->
   <string name="home_screen">ホーム画面</string>
   <!-- Label for showing custom action list of a shortcut or widget. [CHAR_LIMIT=30] -->
-  <string name="custom_actions">カスタム操作</string>
+  <string name="custom_actions">カスタムアクション</string>
   <!-- Widgets -->
   <!-- Message to tell the user to press and hold on a widget to add it [CHAR_LIMIT=50] -->
-  <string name="long_press_widget_to_add">ウィジェットを追加するには押し続けます。</string>
+  <string name="long_press_widget_to_add">ウィジェットを追加するには押し続けます</string>
   <!-- Accessibility spoken hint message in widget picker, which allows user to add a widget. Custom action is the label for additional accessibility actions available in this mode [CHAR_LIMIT=100] -->
   <string name="long_accessible_way_to_add">ダブルタップ後に押し続けてウィジェットを選択するか、カスタム操作を使用してください。</string>
   <!-- The format string for the dimensions of a widget in the drawer -->
   <!-- There is a special version of this format string for Farsi -->
-  <string name="widget_dims_format">%1$dx%2$d</string>
+  <string name="widget_dims_format">%1$d × %2$d</string>
   <!-- Accessibility spoken message format for the dimensions of a widget in the drawer -->
   <string name="widget_accessible_dims_format">幅 %1$d、高さ %2$d</string>
   <!-- Message to tell the user to press and hold a widget/icon to add it  -->
-  <string name="add_item_request_drag_hint">押し続けると、手動で追加できます</string>
+  <string name="add_item_request_drag_hint">押し続けると手動で追加できます</string>
   <!-- Button label to automatically add icon on home screen [CHAR_LIMIT=50] -->
   <string name="place_automatically">自動的に追加</string>
   <!-- All Apps -->
@@ -69,7 +69,7 @@
   <!-- Drag and drop -->
   <skip></skip>
   <!-- Error message when user has filled a home screen -->
-  <string name="out_of_space">このホーム画面に空きスペースがありません。</string>
+  <string name="out_of_space">このホーム画面に空きスペースがありません</string>
   <!-- Error message when user has filled the hotseat -->
   <string name="hotseat_out_of_space">お気に入りトレイに空きスペースがありません</string>
   <!-- All applications label -->
@@ -88,15 +88,15 @@
   <!-- Permission short label -->
   <string name="permlab_install_shortcut">ショートカットのインストール</string>
   <!-- Permission description -->
-  <string name="permdesc_install_shortcut">ユーザー操作なしでショートカットを追加することをアプリに許可します。</string>
+  <string name="permdesc_install_shortcut">ユーザー操作なしでショートカットを追加することをアプリに許可します</string>
   <!-- Permission short label -->
   <string name="permlab_read_settings">ホームの設定とショートカットの読み取り</string>
   <!-- Permission description -->
-  <string name="permdesc_read_settings">ホームの設定とショートカットの読み取りをアプリに許可します。</string>
+  <string name="permdesc_read_settings">ホームの設定とショートカットの読み取りをアプリに許可します</string>
   <!-- Permission short label -->
   <string name="permlab_write_settings">ホームの設定とショートカットの書き込み</string>
   <!-- Permission description -->
-  <string name="permdesc_write_settings">ホームの設定とショートカットの変更をアプリに許可します。</string>
+  <string name="permdesc_write_settings">ホームの設定とショートカットの変更をアプリに許可します</string>
   <!-- Toast shown on clicking a direct call shortcut. [CHAR_LIMIT=80] -->
   <string name="msg_no_phone_permission">「<xliff:g id="APP_NAME">%1$s</xliff:g>」から電話をかけることはできません</string>
   <!-- Widgets: -->
@@ -106,7 +106,7 @@
   <!-- Text to show user in place of a gadget when it is not yet initialized. -->
   <string name="gadget_setup_text">セットアップ</string>
   <!-- Text to inform the user that they can't uninstall a system application -->
-  <string name="uninstall_system_app_text">このシステムアプリはアンインストールできません。</string>
+  <string name="uninstall_system_app_text">このシステムアプリはアンインストールできません</string>
   <!-- Default folder title -->
   <string name="folder_hint_text">名前のないフォルダ</string>
   <!-- Accessibility -->
@@ -147,29 +147,29 @@
   <!-- Title for Allow Rotation setting. [CHAR LIMIT=50] -->
   <string name="allow_rotation_title">ホーム画面の回転を許可</string>
   <!-- Text explaining when the home screen will get rotated. [CHAR LIMIT=100] -->
-  <string name="allow_rotation_desc">スマートフォンが回転したとき</string>
+  <string name="allow_rotation_desc">スマートフォンが回転した時</string>
   <!-- Text explaining that rotation is disabled in Display settings. 'Display' refers to the Display section in system settings [CHAR LIMIT=100] -->
-  <string name="allow_rotation_blocked_desc">現在の [ディスプレイ] 設定では回転を使用できません</string>
+  <string name="allow_rotation_blocked_desc">現在のディスプレイ設定では回転を使用できません</string>
   <!-- Title for Notification dots setting. Tapping this will link to the system Notifications settings screen where the user can turn off notification dots globally. [CHAR LIMIT=50] -->
   <string name="icon_badging_title">通知ドット</string>
   <!-- Text to indicate that the system icon badging setting is on [CHAR LIMIT=100] -->
-  <string name="icon_badging_desc_on">ON</string>
+  <string name="icon_badging_desc_on">オン</string>
   <!-- Text to indicate that the system icon badging setting is off [CHAR LIMIT=100] -->
-  <string name="icon_badging_desc_off">OFF</string>
+  <string name="icon_badging_desc_off">オフ</string>
   <!-- Title for the dialog shown when the app does not has notification access, explaining the requirement for notification access [CHAR LIMIT=50] -->
-  <string name="title_missing_notification_access">通知へのアクセス権限が必要</string>
+  <string name="title_missing_notification_access">通知へのアクセス権限が必要です</string>
   <!-- Message explaining to the user that the notification access is required by the app for showing 'Notification dots' [CHAR LIMIT=NONE] -->
-  <string name="msg_missing_notification_access">通知ドットを表示するには、「<xliff:g id="NAME">%1$s</xliff:g>」のアプリ通知を ON にしてください</string>
+  <string name="msg_missing_notification_access">通知ドットを表示するには「<xliff:g id="NAME">%1$s</xliff:g>」のアプリ通知をオンにしてください</string>
   <!-- Button text in the confirmation dialog which would take the user to the system settings [CHAR LIMIT=50] -->
   <string name="title_change_settings">設定を変更</string>
   <!-- Label for the setting that allows the automatic placement of launcher shortcuts for applications and games installed on the device [CHAR LIMIT=40] -->
   <string name="auto_add_shortcuts_label">ホーム画面にアイコンを追加</string>
   <!-- Text description of the setting that allows the automatic placement of launcher shortcuts for applications and games installed on the device [CHAR LIMIT=NONE] -->
-  <string name="auto_add_shortcuts_description">新しいアプリをダウンロードしたときに</string>
+  <string name="auto_add_shortcuts_description">新しいアプリをダウンロードした時</string>
   <!-- Developer setting to change the shape of icons on home screen. [CHAR LIMIT=50] -->
   <string name="icon_shape_override_label">アイコンの形の変更</string>
   <!-- Option to not change the icon shape on home screen and use the system default setting instead. [CHAR LIMIT=50] -->
-  <string name="icon_shape_system_default">システムのデフォルトを使用</string>
+  <string name="icon_shape_system_default">システムの既定を使用</string>
   <!-- Option to change the shape of the home screen icons to a square. [CHAR LIMIT=50] -->
   <string name="icon_shape_square">スクエア</string>
   <!-- Option to change the shape of the home screen icons to a squircle. This represents the name of the shape somewhere between a circle and a square. [CHAR LIMIT=50] -->
@@ -264,92 +264,92 @@
   <string name="default_live_wallpaper">com.breel.wallpapers/com.breel.wallpapers.dioramas.lagos.LagosWallpaperService</string>
   <string name="pref_icon_pack">アイコンパック</string>
   <string name="state_loading">適用中...</string>
-  <string name="smartspace_preferences_in_settings">At A Glance</string>
-  <string name="smartspace_preferences_in_settings_desc">Home 画面の上部</string>
+  <string name="smartspace_preferences_in_settings">At A Glanceウィジェット</string>
+  <string name="smartspace_preferences_in_settings_desc">異なるイベントを表示するホーム画面の上部にウィジェットを設定する</string>
   <string name="smartspace_hours_mins">%1$s %2$s</string>
   <string name="title_show_google_app">%1$sの表示</string>
   <string name="pref_show_google_now_summary">@string/msg_minus_one_on_left</string>
-  <string name="msg_minus_one_on_left">メインのホーム画面の左側</string>
+  <string name="msg_minus_one_on_left">ホーム画面で右にスワイプしてGoogle Nowパネルにアクセスする</string>
   <string name="about">概要</string>
-  <string name="title_google_app">Google アプリ</string>
-  <string name="title_app_suggestions">アプリの候補の表示</string>
-  <string name="summary_app_suggestions">[すべてのアプリ] リストの一番上</string>
+  <string name="title_google_app">Google Nowアプリ</string>
+  <string name="title_app_suggestions">アプリの候補</string>
+  <string name="summary_app_suggestions">すべてのアプリリストの上部にアプリの候補を表示する</string>
   <string name="about_app_version">バージョン</string>
   <string name="app_releases_url">https://github.com/amirzaidi/launcher3/releases</string>
   <string name="app_name_pixel_launcher">Pixel Launcher</string>
-  <string name="title_disable_suggestions_prompt">おすすめのアプリを非表示にしますか？</string>
-  <string name="msg_disable_suggestions_prompt">"おすすめがアプリリストの上部に表示されなくなり、おすすめの作成に使用される利用データが完全に消去されます。"</string>
+  <string name="title_disable_suggestions_prompt">アプリの候補を非表示にしますか？</string>
+  <string name="msg_disable_suggestions_prompt">"アプリの候補がアプリリストの上部に表示されなくなり、アプリの候補の作成に使用される利用データが完全に消去されます。"</string>
   <string name="label_turn_off_suggestions">非表示にする</string>
   <!-- Preference categories -->
-  <string name="home_category_title">Home screen</string>
-  <string name="app_drawer_category_title">App drawer</string>
-  <string name="icon_category_title">App icons</string>
-  <string name="widget_category_title">Widgets</string>
-  <string name="gestures_category_title">Gestures</string>
-  <string name="other_category_title">Other</string>
-  <string name="other_category_summary">Miscellaneous configurations</string>
+  <string name="home_category_title">ホーム画面</string>
+  <string name="app_drawer_category_title">アプリドロワー</string>
+  <string name="icon_category_title">アプリアイコン</string>
+  <string name="widget_category_title">ウィジェット</string>
+  <string name="gestures_category_title">ジェスチャー</string>
+  <string name="other_category_title">その他</string>
+  <string name="other_category_summary">その他の設定</string>
   <!-- About -->
-  <string name="about_credits">Credits</string>
+  <string name="about_credits">クレジット</string>
   <string name="about_credits_ok">OK</string>
   <string name="about_amirzaidi_title">Amir Zaidi</string>
-  <string name="about_amirzaidi_summary">Reverse engineered pixel launcher features onto Launcher 3</string>
+  <string name="about_amirzaidi_summary">Launcher3にリバースエンジニアリングされたPixel Launcherの機能</string>
   <string name="about_amirzaidi_url">https://github.com/amirzaidi</string>
   <!-- Hidden app -->
-  <string name="hide_app">表示しないアプリ</string>
-  <string name="hide_app_sum">アプリドロワーに表示しないアプリを選択</string>
+  <string name="hide_app">アプリを隠す</string>
+  <string name="hide_app_sum">ドロワーからアプリを非表示にする</string>
   <string name="hide_app_selected">&#160;選択されています</string>
   <string name="hidden_app">全てのアプリ</string>
-  <string name="hide_selected">選択されたアプリを表示しない</string>
+  <string name="hide_selected">選択したアプリを非表示</string>
   <string name="more">さらに表示</string>
   <string name="reset_hidden_apps">全て初期状態に戻す</string>
   <string name="reset_hidden_apps_done">全ての非表示のアプリが利用可能になりました</string>
   <!-- Swipe up indicator -->
-  <string name="show_swipeup_arrow">スワイプアップインジケーターを有効にする</string>
+  <string name="show_swipeup_arrow">スワイプアップインジケーター</string>
   <string name="show_swipeup_arrow_summary">ドックの上にスワイプの上向き矢印インジケータを表示する</string>
   <!-- Hide/Show search bars -->
-  <string name="bottom_search_bar_title">Bottom search bar</string>
-  <string name="bottom_search_bar_summary">Show the bottom search bar at the bottom of the dock</string>
-  <string name="top_search_bar_title">Top search bar</string>
-  <string name="top_search_bar_summary">Show the bottom search at the top of the app drawer</string>
+  <string name="bottom_search_bar_title">下部の検索バー</string>
+  <string name="bottom_search_bar_summary">ドックの下部に検索バーを表示する</string>
+  <string name="top_search_bar_title">上部の検索バー</string>
+  <string name="top_search_bar_summary">アプリドロワーの上部に検索バーを表示する</string>
   <!-- Weather widget -->
-  <string name="pref_show_clock_weather">Home screen date and weather</string>
-  <string name="pref_show_clock_weather_both">Show both date and weather</string>
-  <string name="pref_show_clock_weather_nothing">Don\'t show</string>
-  <string name="pref_show_clock_weather_clock_only">Show date only</string>
-  <string name="pref_show_clock_weather_weather_only">Show weather only</string>
+  <string name="pref_show_clock_weather">ホーム画面の日付と天気</string>
+  <string name="pref_show_clock_weather_both">日付と天気を表示する</string>
+  <string name="pref_show_clock_weather_nothing">表示しない</string>
+  <string name="pref_show_clock_weather_clock_only">日付のみ表示</string>
+  <string name="pref_show_clock_weather_weather_only">天気のみ表示</string>
   <!-- Grid layout -->
-  <string name="num_default">Default</string>
-  <string name="num_three">Three</string>
-  <string name="num_four">Four</string>
-  <string name="num_five">Five</string>
-  <string name="num_six">Six</string>
-  <string name="num_seven">Seven</string>
-  <string name="grid_category_title">Columns and rows</string>
-  <string name="number_of_columns_title">Grid columns</string>
-  <string name="number_of_rows_title">Grid rows</string>
-  <string name="number_of_hotseat_title">Hotseat icons</string>
-  <string name="icon_shape_rounded_square">Rounded square</string>
+  <string name="num_default">既定</string>
+  <string name="num_three">3</string>
+  <string name="num_four">4</string>
+  <string name="num_five">5</string>
+  <string name="num_six">6</string>
+  <string name="num_seven">7</string>
+  <string name="grid_category_title">列数と行数</string>
+  <string name="number_of_columns_title">格子の列</string>
+  <string name="number_of_rows_title">格子の行</string>
+  <string name="number_of_hotseat_title">最も使用されるアイコン</string>
+  <string name="icon_shape_rounded_square">丸い長方形</string>
   <!-- Icon pack -->
-  <string name="default_iconpack_title">Default</string>
-  <string name="icons_pack_name">Icon pack</string>
-  <string name="edit_drop_target_label">Edit</string>
-  <string name="edit_app">Edit</string>
-  <string name="reset_icon">Reset</string>
-  <string name="customize">Customize</string>
-  <string name="visual">Visual</string>
-  <string name="all_icons">All icons</string>
-  <string name="similar_icons">Similar icons</string>
-  <string name="ok">Ok</string>
-  <string name="icon_label">Label</string>
-  <string name="loading">Loading, please wait</string>
-  <string name="icon_chooser">Icon chooser</string>
-  <string name="icon_search">Search for icons</string>
-  <string name="action_edit">Edit</string>
-  <string name="icon_pack_updated">Your launcher icon pack has been updated, new icons for your apps might be available.</string>
+  <string name="default_iconpack_title">既定</string>
+  <string name="icons_pack_name">アイコンパック</string>
+  <string name="edit_drop_target_label">編集</string>
+  <string name="edit_app">編集</string>
+  <string name="reset_icon">リセット</string>
+  <string name="customize">カスタマイズ</string>
+  <string name="visual">外観</string>
+  <string name="all_icons">全てのアイコン</string>
+  <string name="similar_icons">類似のアイコン</string>
+  <string name="ok">OK</string>
+  <string name="icon_label">ラベル</string>
+  <string name="loading">読み込み中です。しばらくお待ちください。</string>
+  <string name="icon_chooser">アイコンの選択</string>
+  <string name="icon_search">アイコンを検索する</string>
+  <string name="action_edit">編集</string>
+  <string name="icon_pack_updated">ランチャーアイコンパックが更新されました。あなたのアプリの新しいアイコンが利用可能になるかもしれません。</string>
   <!-- Homescreen double tap gesture -->
-  <string name="pref_homescreen_dt_gestures_title">Double tap gesture</string>
-  <string name="pref_homescreen_dt_gestures_summary">Select the action of the double tap gesture on the homescreen</string>
-  <string name="pref_homescreen_dt_gestures_none">None</string>
-  <string name="pref_homescreen_dt_gestures_sleep">Sleep</string>
-  <string name="pref_homescreen_dt_gestures_torch">Flashlight</string>
+  <string name="pref_homescreen_dt_gestures_title">ダブルタップジェスチャー</string>
+  <string name="pref_homescreen_dt_gestures_summary">ホーム画面でのダブルタップジェスチャーのアクションを選択する</string>
+  <string name="pref_homescreen_dt_gestures_none">なし</string>
+  <string name="pref_homescreen_dt_gestures_sleep">スリープ</string>
+  <string name="pref_homescreen_dt_gestures_torch">フラッシュライト</string>
 </resources>
