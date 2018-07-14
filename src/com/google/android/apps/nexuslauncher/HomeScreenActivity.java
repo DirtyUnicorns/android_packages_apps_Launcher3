@@ -36,6 +36,7 @@ public class HomeScreenActivity extends com.android.launcher3.SettingsActivity i
     public final static String SMARTSPACE_PREF = "pref_smartspace";
     public static final String KEY_SHOW_WEATHER_CLOCK = "pref_show_clock_weather";
     public static final String KEY_HOMESCREEN_DT_GESTURES = "pref_homescreen_dt_gestures";
+    public static final String KEY_HOMESCREEN_NOTIFICATIONS_GESTURES = "pref_homescreen_notification_gestures";
 
     private static final String GOOGLE_NOW_PACKAGE = "com.google.android.googlequicksearchbox";
 
@@ -72,7 +73,8 @@ public class HomeScreenActivity extends com.android.launcher3.SettingsActivity i
         private SwitchPreference mGoogleNowPanel;
         private PreferenceScreen mAtGlanceWidget;
         private ListPreference mShowClockWeather;
-        private ListPreference mHomescreenGestures;
+        private ListPreference mHomescreenDoubleTapGestures;
+        private ListPreference mHomescreenNotificationGestures;
 
         @Override
         public void onCreate(Bundle savedInstanceState) {
@@ -91,7 +93,8 @@ public class HomeScreenActivity extends com.android.launcher3.SettingsActivity i
             mGoogleNowPanel = (SwitchPreference) findPreference(ENABLE_MINUS_ONE_PREF);
             mAtGlanceWidget = (PreferenceScreen) findPreference(SMARTSPACE_PREF);
             mShowClockWeather = (ListPreference) findPreference(KEY_SHOW_WEATHER_CLOCK);
-            mHomescreenGestures = (ListPreference) findPreference(KEY_HOMESCREEN_DT_GESTURES);
+            mHomescreenDoubleTapGestures = (ListPreference) findPreference(KEY_HOMESCREEN_DT_GESTURES);
+            mHomescreenNotificationGestures = (ListPreference) findPreference(KEY_HOMESCREEN_NOTIFICATIONS_GESTURES);
 
             findPreference(Utilities.BOTTOM_SEARCH_BAR_KEY).setOnPreferenceChangeListener(this);
 
@@ -116,8 +119,11 @@ public class HomeScreenActivity extends com.android.launcher3.SettingsActivity i
             mShowClockWeather.setValue(getDevicePrefs(mContext).getString(KEY_SHOW_WEATHER_CLOCK, "0"));
             mShowClockWeather.setOnPreferenceChangeListener(this);
 
-            mHomescreenGestures.setValue(getDevicePrefs(mContext).getString(KEY_HOMESCREEN_DT_GESTURES, "0"));
-            mHomescreenGestures.setOnPreferenceChangeListener(this);
+            mHomescreenDoubleTapGestures.setValue(getDevicePrefs(mContext).getString(KEY_HOMESCREEN_DT_GESTURES, "0"));
+            mHomescreenDoubleTapGestures.setOnPreferenceChangeListener(this);
+
+            mHomescreenNotificationGestures.setValue(getDevicePrefs(mContext).getString(KEY_HOMESCREEN_NOTIFICATIONS_GESTURES, "0"));
+            mHomescreenNotificationGestures.setOnPreferenceChangeListener(this);
 
             HomeKeyWatcher mHomeKeyListener = new HomeKeyWatcher(getActivity());
             mHomeKeyListener.setOnHomePressedListener(() -> {
@@ -174,9 +180,15 @@ public class HomeScreenActivity extends com.android.launcher3.SettingsActivity i
                     restartNeeded = true;
                     break;
                 case KEY_HOMESCREEN_DT_GESTURES:
-                    String gestureValue = (String) newValue;
-                    getDevicePrefs(mContext).edit().putString(KEY_HOMESCREEN_DT_GESTURES, gestureValue).commit();
-                    mHomescreenGestures.setValue(gestureValue);
+                    String doubleTapGestureValue = (String) newValue;
+                    getDevicePrefs(mContext).edit().putString(KEY_HOMESCREEN_DT_GESTURES, doubleTapGestureValue).commit();
+                    mHomescreenDoubleTapGestures.setValue(doubleTapGestureValue);
+                    restartNeeded = true;
+                    break;
+                case KEY_HOMESCREEN_NOTIFICATIONS_GESTURES:
+                    String notificationGestureValue = (String) newValue;
+                    getDevicePrefs(mContext).edit().putString(KEY_HOMESCREEN_NOTIFICATIONS_GESTURES, notificationGestureValue).commit();
+                    mHomescreenNotificationGestures.setValue(notificationGestureValue);
                     restartNeeded = true;
                     break;
                 case Utilities.GRID_COLUMNS:
