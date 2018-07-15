@@ -269,7 +269,7 @@ public class IconsActivity extends com.android.launcher3.SettingsActivity implem
         public Dialog onCreateDialog(Bundle savedInstanceState) {
             final Context context = getActivity();
             String msg = context.getString(R.string.msg_missing_notification_access,
-                    context.getString(R.string.derived_app_name));
+                    context.getString(R.string.app_name));
             return new AlertDialog.Builder(context)
                     .setTitle(R.string.title_missing_notification_access)
                     .setMessage(msg)

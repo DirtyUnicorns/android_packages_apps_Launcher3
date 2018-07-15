@@ -276,7 +276,6 @@
   <string name="summary_app_suggestions">Afficher les suggestions d\'applications en haut</string>
   <string name="about_app_version">Version</string>
   <string name="app_releases_url">https://github.com/amirzaidi/launcher3/releases</string>
-  <string name="app_name_pixel_launcher">Launcher3</string>
   <string name="title_disable_suggestions_prompt">Désactiver les suggestions d\'applications ?</string>
   <string name="msg_disable_suggestions_prompt">"Les suggestions d'applications ne s'afficheront plus en haut du tiroir d'applications, et les données d'utilisation utilisées pour les créer seront supprimées définitivement."</string>
   <string name="label_turn_off_suggestions">DÉSACTIVER</string>

@@ -276,7 +276,6 @@
   <string name="summary_app_suggestions">Вверху списка всех приложений</string>
   <string name="about_app_version">Версия</string>
   <string name="app_releases_url">https://github.com/amirzaidi/launcher3/releases</string>
-  <string name="app_name_pixel_launcher">Pixel Launcher</string>
   <string name="title_disable_suggestions_prompt">Не показывать рекомендуемые приложения?</string>
   <string name="msg_disable_suggestions_prompt">"Рекомендуемые приложения не будут показываться в начале списка. Данные, связанные с этой функцией, будут удалены."</string>
   <string name="label_turn_off_suggestions">ОТКЛЮЧИТЬ</string>

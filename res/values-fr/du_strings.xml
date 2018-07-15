@@ -81,7 +81,6 @@
     <string name="label_voice_search">Recherche vocale</string>
     <string name="about">À propos</string>
     <string name="about_app_version">Version</string>
-    <string name="app_name_pixel_launcher">Pixel Launcher</string>
     <string name="title_disable_suggestions_prompt">Désactiver les suggestions d\'applications ?</string>
     <string name="msg_disable_suggestions_prompt">Les suggestions d\'applications ne s\'afficheront plus en haut du tiroir d\'applications, et les données d\'utilisation utilisées pour les créer seront supprimées définitivement.</string>
     <string name="label_turn_off_suggestions">DÉSACTIVER</string>
