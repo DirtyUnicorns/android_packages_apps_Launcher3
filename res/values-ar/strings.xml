@@ -333,6 +333,7 @@
   <string name="icons_pack_name">حزمة أيقونات</string>
   <string name="edit_drop_target_label">تعديل</string>
   <string name="edit_app">تعديل</string>
+  <string name="edit_hint">اسم الرمز</string>
   <string name="reset_icon">إعادة تعيين</string>
   <string name="customize">تخصيص</string>
   <string name="visual">بصري</string>
@@ -346,9 +347,15 @@
   <string name="action_edit">تعديل</string>
   <string name="icon_pack_updated">تم تحديث حزمة أيقونات المشغل الخاص بك، أيقونات جديدة للتطبيقات الخاصة بك قد تكون متاحة.</string>
   <!-- Homescreen double tap gesture -->
-  <string name="pref_homescreen_dt_gestures_title">إيماءة الضغط المزدوج</string>
+  <string name="pref_homescreen_dt_gestures_title">Double tap</string>
   <string name="pref_homescreen_dt_gestures_summary">حدد إجراء إيماءة الضغط المزدوج على الشاشة الرئيسية</string>
   <string name="pref_homescreen_dt_gestures_none">لا شيء</string>
   <string name="pref_homescreen_dt_gestures_sleep">السكون</string>
   <string name="pref_homescreen_dt_gestures_torch">الكشاف</string>
+  <!-- Homescreen notification gestures -->
+  <string name="pref_homescreen_notification_gestures_title">Swipe down</string>
+  <string name="pref_homescreen_notification_gestures_summary">Select the action of the swipe down gesture on the homescreen</string>
+  <string name="pref_homescreen_notification_gestures_none">None</string>
+  <string name="pref_homescreen_notification_gestures_notifications">Notifications</string>
+  <string name="pref_homescreen_notification_gestures_panel">QS Panel</string>
 </resources>

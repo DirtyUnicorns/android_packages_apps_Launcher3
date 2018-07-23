@@ -333,6 +333,7 @@
   <string name="icons_pack_name">Ikonpaket</string>
   <string name="edit_drop_target_label">Ändra</string>
   <string name="edit_app">Ändra</string>
+  <string name="edit_hint">Icon name</string>
   <string name="reset_icon">Återställ</string>
   <string name="customize">Anpassa</string>
   <string name="visual">Visuellt</string>
@@ -346,9 +347,15 @@
   <string name="action_edit">Ändra</string>
   <string name="icon_pack_updated">Din launcher Ikonpaket har uppdaterats, det kan finnas nya ikoner för dina appar.</string>
   <!-- Homescreen double tap gesture -->
-  <string name="pref_homescreen_dt_gestures_title">Dubbeltryck gester</string>
+  <string name="pref_homescreen_dt_gestures_title">Double tap</string>
   <string name="pref_homescreen_dt_gestures_summary">Välj en åtgärd för dubbeltryck gest på hemskärmen</string>
   <string name="pref_homescreen_dt_gestures_none">Inga</string>
   <string name="pref_homescreen_dt_gestures_sleep">Viloläge</string>
   <string name="pref_homescreen_dt_gestures_torch">Ficklampa</string>
+  <!-- Homescreen notification gestures -->
+  <string name="pref_homescreen_notification_gestures_title">Swipe down</string>
+  <string name="pref_homescreen_notification_gestures_summary">Select the action of the swipe down gesture on the homescreen</string>
+  <string name="pref_homescreen_notification_gestures_none">None</string>
+  <string name="pref_homescreen_notification_gestures_notifications">Notifications</string>
+  <string name="pref_homescreen_notification_gestures_panel">QS Panel</string>
 </resources>

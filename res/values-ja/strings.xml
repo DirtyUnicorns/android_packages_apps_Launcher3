@@ -333,6 +333,7 @@
   <string name="icons_pack_name">アイコンパック</string>
   <string name="edit_drop_target_label">編集</string>
   <string name="edit_app">編集</string>
+  <string name="edit_hint">アイコン名</string>
   <string name="reset_icon">リセット</string>
   <string name="customize">カスタマイズ</string>
   <string name="visual">外観</string>
@@ -346,9 +347,15 @@
   <string name="action_edit">編集</string>
   <string name="icon_pack_updated">ランチャーアイコンパックが更新されました。あなたのアプリの新しいアイコンが利用可能になるかもしれません。</string>
   <!-- Homescreen double tap gesture -->
-  <string name="pref_homescreen_dt_gestures_title">ダブルタップジェスチャー</string>
+  <string name="pref_homescreen_dt_gestures_title">Double tap</string>
   <string name="pref_homescreen_dt_gestures_summary">ホーム画面でのダブルタップジェスチャーのアクションを選択する</string>
   <string name="pref_homescreen_dt_gestures_none">なし</string>
   <string name="pref_homescreen_dt_gestures_sleep">スリープ</string>
   <string name="pref_homescreen_dt_gestures_torch">フラッシュライト</string>
+  <!-- Homescreen notification gestures -->
+  <string name="pref_homescreen_notification_gestures_title">Swipe down</string>
+  <string name="pref_homescreen_notification_gestures_summary">Select the action of the swipe down gesture on the homescreen</string>
+  <string name="pref_homescreen_notification_gestures_none">None</string>
+  <string name="pref_homescreen_notification_gestures_notifications">Notifications</string>
+  <string name="pref_homescreen_notification_gestures_panel">QS Panel</string>
 </resources>

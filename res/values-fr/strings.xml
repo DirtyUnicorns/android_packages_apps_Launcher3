@@ -333,6 +333,7 @@
   <string name="icons_pack_name">Paquet d\'icônes</string>
   <string name="edit_drop_target_label">Modifier</string>
   <string name="edit_app">Modifier</string>
+  <string name="edit_hint">Nom de l\'icône</string>
   <string name="reset_icon">Réinitialiser</string>
   <string name="customize">Personnaliser</string>
   <string name="visual">Visuel</string>
@@ -346,9 +347,15 @@
   <string name="action_edit">Modifier</string>
   <string name="icon_pack_updated">Le paquet d\'icônes du lanceur d\'application a été mis à jour. De nouvelles icônes pour les applications sont peut-être disponibles.</string>
   <!-- Homescreen double tap gesture -->
-  <string name="pref_homescreen_dt_gestures_title">Double appui</string>
+  <string name="pref_homescreen_dt_gestures_title">Double tap</string>
   <string name="pref_homescreen_dt_gestures_summary">Sélectionner l\'action du geste par double appui sur l\'écran d\'accueil</string>
   <string name="pref_homescreen_dt_gestures_none">Aucun</string>
   <string name="pref_homescreen_dt_gestures_sleep">Mise en veille</string>
   <string name="pref_homescreen_dt_gestures_torch">Lampe de poche</string>
+  <!-- Homescreen notification gestures -->
+  <string name="pref_homescreen_notification_gestures_title">Swipe down</string>
+  <string name="pref_homescreen_notification_gestures_summary">Select the action of the swipe down gesture on the homescreen</string>
+  <string name="pref_homescreen_notification_gestures_none">None</string>
+  <string name="pref_homescreen_notification_gestures_notifications">Notifications</string>
+  <string name="pref_homescreen_notification_gestures_panel">QS Panel</string>
 </resources>

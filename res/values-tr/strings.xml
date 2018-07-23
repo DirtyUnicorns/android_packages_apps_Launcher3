@@ -338,6 +338,7 @@
   <string name="icons_pack_name">Simge paketi</string>
   <string name="edit_drop_target_label">Düzenle</string>
   <string name="edit_app">Düzenle</string>
+  <string name="edit_hint">Simge adı</string>
   <string name="reset_icon">Sıfırla</string>
   <string name="customize">Özelleştir</string>
   <string name="visual">Görsel</string>
@@ -351,9 +352,15 @@
   <string name="action_edit">Düzenle</string>
   <string name="icon_pack_updated">Başlatıcı simge paketiniz güncellendi, uygulamalarınız için yeni simgeler mevcut olabilir.</string>
   <!-- Homescreen double tap gesture -->
-  <string name="pref_homescreen_dt_gestures_title">Çift dokunma hareketi</string>
+  <string name="pref_homescreen_dt_gestures_title">Double tap</string>
   <string name="pref_homescreen_dt_gestures_summary">Ana ekrana çift dokunma hareketi için eylem seçin</string>
   <string name="pref_homescreen_dt_gestures_none">Hiçbiri</string>
   <string name="pref_homescreen_dt_gestures_sleep">Uyut</string>
   <string name="pref_homescreen_dt_gestures_torch">El feneri</string>
+  <!-- Homescreen notification gestures -->
+  <string name="pref_homescreen_notification_gestures_title">Swipe down</string>
+  <string name="pref_homescreen_notification_gestures_summary">Select the action of the swipe down gesture on the homescreen</string>
+  <string name="pref_homescreen_notification_gestures_none">None</string>
+  <string name="pref_homescreen_notification_gestures_notifications">Notifications</string>
+  <string name="pref_homescreen_notification_gestures_panel">QS Panel</string>
 </resources>

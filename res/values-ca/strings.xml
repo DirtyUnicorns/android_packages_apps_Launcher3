@@ -333,6 +333,7 @@
   <string name="icons_pack_name">Paquet d\'icones</string>
   <string name="edit_drop_target_label">Editar</string>
   <string name="edit_app">Editar</string>
+  <string name="edit_hint">Nom de la icona</string>
   <string name="reset_icon">Restablir</string>
   <string name="customize">Personalitzar</string>
   <string name="visual">Visual</string>
@@ -346,9 +347,15 @@
   <string name="action_edit">Editar</string>
   <string name="icon_pack_updated">S\'ha actualitzat el paquet d\'icones del llançador, pot trobar disponibles les noves icones d\'aplicacions.</string>
   <!-- Homescreen double tap gesture -->
-  <string name="pref_homescreen_dt_gestures_title">Gest de doble toc</string>
+  <string name="pref_homescreen_dt_gestures_title">Double tap</string>
   <string name="pref_homescreen_dt_gestures_summary">Selecciona l\'acció de doble toc a la pantalla d\'inici</string>
   <string name="pref_homescreen_dt_gestures_none">Cap</string>
   <string name="pref_homescreen_dt_gestures_sleep">Repòs</string>
   <string name="pref_homescreen_dt_gestures_torch">Llanterna</string>
+  <!-- Homescreen notification gestures -->
+  <string name="pref_homescreen_notification_gestures_title">Swipe down</string>
+  <string name="pref_homescreen_notification_gestures_summary">Select the action of the swipe down gesture on the homescreen</string>
+  <string name="pref_homescreen_notification_gestures_none">None</string>
+  <string name="pref_homescreen_notification_gestures_notifications">Notifications</string>
+  <string name="pref_homescreen_notification_gestures_panel">QS Panel</string>
 </resources>

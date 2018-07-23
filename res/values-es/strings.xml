@@ -333,6 +333,7 @@
   <string name="icons_pack_name">Paquete de iconos</string>
   <string name="edit_drop_target_label">Editar</string>
   <string name="edit_app">Editar</string>
+  <string name="edit_hint">Nombre de icono</string>
   <string name="reset_icon">Restablecer</string>
   <string name="customize">Personalizar</string>
   <string name="visual">Visual</string>
@@ -346,9 +347,15 @@
   <string name="action_edit">Editar</string>
   <string name="icon_pack_updated">El paquete de iconos del lanzador ha sido actualizado, puedes encontrar disponibles nuevos iconos para tus aplicaciones.</string>
   <!-- Homescreen double tap gesture -->
-  <string name="pref_homescreen_dt_gestures_title">Doble toque</string>
+  <string name="pref_homescreen_dt_gestures_title">Double tap</string>
   <string name="pref_homescreen_dt_gestures_summary">Seleccione la acción de doble toque en la pantalla de inicio</string>
   <string name="pref_homescreen_dt_gestures_none">Ninguno</string>
   <string name="pref_homescreen_dt_gestures_sleep">Suspender</string>
   <string name="pref_homescreen_dt_gestures_torch">Linterna</string>
+  <!-- Homescreen notification gestures -->
+  <string name="pref_homescreen_notification_gestures_title">Swipe down</string>
+  <string name="pref_homescreen_notification_gestures_summary">Select the action of the swipe down gesture on the homescreen</string>
+  <string name="pref_homescreen_notification_gestures_none">None</string>
+  <string name="pref_homescreen_notification_gestures_notifications">Notifications</string>
+  <string name="pref_homescreen_notification_gestures_panel">QS Panel</string>
 </resources>

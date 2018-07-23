@@ -338,6 +338,7 @@
   <string name="icons_pack_name">Icon pack</string>
   <string name="edit_drop_target_label">Edit</string>
   <string name="edit_app">Edit</string>
+  <string name="edit_hint">Icon name</string>
   <string name="reset_icon">Reset</string>
   <string name="customize">Customize</string>
   <string name="visual">Visual</string>
@@ -351,9 +352,15 @@
   <string name="action_edit">Edit</string>
   <string name="icon_pack_updated">Your launcher icon pack has been updated, new icons for your apps might be available.</string>
   <!-- Homescreen double tap gesture -->
-  <string name="pref_homescreen_dt_gestures_title">Double tap gesture</string>
+  <string name="pref_homescreen_dt_gestures_title">Double tap</string>
   <string name="pref_homescreen_dt_gestures_summary">Select the action of the double tap gesture on the homescreen</string>
   <string name="pref_homescreen_dt_gestures_none">None</string>
   <string name="pref_homescreen_dt_gestures_sleep">Sleep</string>
   <string name="pref_homescreen_dt_gestures_torch">Flashlight</string>
+  <!-- Homescreen notification gestures -->
+  <string name="pref_homescreen_notification_gestures_title">Swipe down</string>
+  <string name="pref_homescreen_notification_gestures_summary">Select the action of the swipe down gesture on the homescreen</string>
+  <string name="pref_homescreen_notification_gestures_none">None</string>
+  <string name="pref_homescreen_notification_gestures_notifications">Notifications</string>
+  <string name="pref_homescreen_notification_gestures_panel">QS Panel</string>
 </resources>

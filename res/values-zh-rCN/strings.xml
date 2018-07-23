@@ -333,6 +333,7 @@
   <string name="icons_pack_name">图标包</string>
   <string name="edit_drop_target_label">编辑</string>
   <string name="edit_app">编辑</string>
+  <string name="edit_hint">图标名称</string>
   <string name="reset_icon">重置</string>
   <string name="customize">自定义</string>
   <string name="visual">视觉</string>
@@ -346,9 +347,15 @@
   <string name="action_edit">编辑</string>
   <string name="icon_pack_updated">您的启动器图标包已更新, 您的应用程序的新图标可能生效。</string>
   <!-- Homescreen double tap gesture -->
-  <string name="pref_homescreen_dt_gestures_title">双击手势</string>
+  <string name="pref_homescreen_dt_gestures_title">Double tap</string>
   <string name="pref_homescreen_dt_gestures_summary">选择主屏幕双击手势操作</string>
   <string name="pref_homescreen_dt_gestures_none">无</string>
   <string name="pref_homescreen_dt_gestures_sleep">关屏</string>
   <string name="pref_homescreen_dt_gestures_torch">手电筒</string>
+  <!-- Homescreen notification gestures -->
+  <string name="pref_homescreen_notification_gestures_title">Swipe down</string>
+  <string name="pref_homescreen_notification_gestures_summary">Select the action of the swipe down gesture on the homescreen</string>
+  <string name="pref_homescreen_notification_gestures_none">None</string>
+  <string name="pref_homescreen_notification_gestures_notifications">Notifications</string>
+  <string name="pref_homescreen_notification_gestures_panel">QS Panel</string>
 </resources>
