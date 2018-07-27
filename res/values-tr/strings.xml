@@ -352,15 +352,15 @@
   <string name="action_edit">Düzenle</string>
   <string name="icon_pack_updated">Başlatıcı simge paketiniz güncellendi, uygulamalarınız için yeni simgeler mevcut olabilir.</string>
   <!-- Homescreen double tap gesture -->
-  <string name="pref_homescreen_dt_gestures_title">Double tap</string>
+  <string name="pref_homescreen_dt_gestures_title">Çift dokunma</string>
   <string name="pref_homescreen_dt_gestures_summary">Ana ekrana çift dokunma hareketi için eylem seçin</string>
   <string name="pref_homescreen_dt_gestures_none">Hiçbiri</string>
   <string name="pref_homescreen_dt_gestures_sleep">Uyut</string>
   <string name="pref_homescreen_dt_gestures_torch">El feneri</string>
   <!-- Homescreen notification gestures -->
-  <string name="pref_homescreen_notification_gestures_title">Swipe down</string>
-  <string name="pref_homescreen_notification_gestures_summary">Select the action of the swipe down gesture on the homescreen</string>
-  <string name="pref_homescreen_notification_gestures_none">None</string>
-  <string name="pref_homescreen_notification_gestures_notifications">Notifications</string>
-  <string name="pref_homescreen_notification_gestures_panel">QS Panel</string>
+  <string name="pref_homescreen_notification_gestures_title">Aşağı kaydır</string>
+  <string name="pref_homescreen_notification_gestures_summary">Ana ekranda aşağı kaydırma hareketinin eylemini seçin</string>
+  <string name="pref_homescreen_notification_gestures_none">Yok</string>
+  <string name="pref_homescreen_notification_gestures_notifications">Bildirimler</string>
+  <string name="pref_homescreen_notification_gestures_panel">Hızlı ayarlar paneli</string>
 </resources>

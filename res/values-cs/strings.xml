@@ -347,15 +347,15 @@
   <string name="action_edit">Upravit</string>
   <string name="icon_pack_updated">Váš balíček ikon spouštěče byl aktualizován, nové ikony pro vaše aplikace mohou být k dispozici.</string>
   <!-- Homescreen double tap gesture -->
-  <string name="pref_homescreen_dt_gestures_title">Double tap</string>
+  <string name="pref_homescreen_dt_gestures_title">Dvojí poklepání</string>
   <string name="pref_homescreen_dt_gestures_summary">Vyberte gesto dvojím poklepáním na domovskou obrazovku</string>
   <string name="pref_homescreen_dt_gestures_none">Žádné</string>
   <string name="pref_homescreen_dt_gestures_sleep">Uspat</string>
   <string name="pref_homescreen_dt_gestures_torch">Svítilna</string>
   <!-- Homescreen notification gestures -->
-  <string name="pref_homescreen_notification_gestures_title">Swipe down</string>
-  <string name="pref_homescreen_notification_gestures_summary">Select the action of the swipe down gesture on the homescreen</string>
-  <string name="pref_homescreen_notification_gestures_none">None</string>
-  <string name="pref_homescreen_notification_gestures_notifications">Notifications</string>
-  <string name="pref_homescreen_notification_gestures_panel">QS Panel</string>
+  <string name="pref_homescreen_notification_gestures_title">Přejetí dolů</string>
+  <string name="pref_homescreen_notification_gestures_summary">Vyberte akci gesta přejetím dolů na domovské obrazovce</string>
+  <string name="pref_homescreen_notification_gestures_none">Žádná</string>
+  <string name="pref_homescreen_notification_gestures_notifications">Oznámení</string>
+  <string name="pref_homescreen_notification_gestures_panel">Panel QS</string>
 </resources>

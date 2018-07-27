@@ -333,7 +333,7 @@
   <string name="icons_pack_name">Набор иконок</string>
   <string name="edit_drop_target_label">Изменить</string>
   <string name="edit_app">Изменить</string>
-  <string name="edit_hint">Icon name</string>
+  <string name="edit_hint">Название значка</string>
   <string name="reset_icon">Сброс</string>
   <string name="customize">Настроить</string>
   <string name="visual">Отображение</string>
@@ -347,15 +347,15 @@
   <string name="action_edit">Изменить</string>
   <string name="icon_pack_updated">Пакет иконок для вашего лаунчера был обновлён, могут быть доступны новые иконки.</string>
   <!-- Homescreen double tap gesture -->
-  <string name="pref_homescreen_dt_gestures_title">Double tap</string>
+  <string name="pref_homescreen_dt_gestures_title">Двойное нажатие</string>
   <string name="pref_homescreen_dt_gestures_summary">Выберите действие жест двойной кран на homescreen</string>
   <string name="pref_homescreen_dt_gestures_none">Ничего</string>
   <string name="pref_homescreen_dt_gestures_sleep">Выключить экран</string>
   <string name="pref_homescreen_dt_gestures_torch">Фонарик</string>
   <!-- Homescreen notification gestures -->
-  <string name="pref_homescreen_notification_gestures_title">Swipe down</string>
-  <string name="pref_homescreen_notification_gestures_summary">Select the action of the swipe down gesture on the homescreen</string>
-  <string name="pref_homescreen_notification_gestures_none">None</string>
-  <string name="pref_homescreen_notification_gestures_notifications">Notifications</string>
-  <string name="pref_homescreen_notification_gestures_panel">QS Panel</string>
+  <string name="pref_homescreen_notification_gestures_title">Свайп вниз</string>
+  <string name="pref_homescreen_notification_gestures_summary">Выберите действие для свайпа вниз на домашнем экране</string>
+  <string name="pref_homescreen_notification_gestures_none">Ничего</string>
+  <string name="pref_homescreen_notification_gestures_notifications">Уведомления</string>
+  <string name="pref_homescreen_notification_gestures_panel">Панель быстрых настроек</string>
 </resources>

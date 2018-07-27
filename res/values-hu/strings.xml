@@ -347,15 +347,15 @@
   <string name="action_edit">Szerkesztés</string>
   <string name="icon_pack_updated">Az Ön főképernyőjének ikoncsomagja frissítésre került, nézze meg, hogy mely alkalmazásaihoz érhetők el új ikonok.</string>
   <!-- Homescreen double tap gesture -->
-  <string name="pref_homescreen_dt_gestures_title">Double tap</string>
+  <string name="pref_homescreen_dt_gestures_title">Dupla érintés</string>
   <string name="pref_homescreen_dt_gestures_summary">Válasszon műveletet a kezdőlap dupla érintéses gesztusához</string>
   <string name="pref_homescreen_dt_gestures_none">Nincs</string>
   <string name="pref_homescreen_dt_gestures_sleep">Alvó mód</string>
   <string name="pref_homescreen_dt_gestures_torch">Zseblámpa</string>
   <!-- Homescreen notification gestures -->
-  <string name="pref_homescreen_notification_gestures_title">Swipe down</string>
-  <string name="pref_homescreen_notification_gestures_summary">Select the action of the swipe down gesture on the homescreen</string>
-  <string name="pref_homescreen_notification_gestures_none">None</string>
-  <string name="pref_homescreen_notification_gestures_notifications">Notifications</string>
-  <string name="pref_homescreen_notification_gestures_panel">QS Panel</string>
+  <string name="pref_homescreen_notification_gestures_title">Lefelé csúsztatás</string>
+  <string name="pref_homescreen_notification_gestures_summary">Válasszon műveletet a kezdőlapon való lefelé csúsztatás gesztusához</string>
+  <string name="pref_homescreen_notification_gestures_none">Nincs</string>
+  <string name="pref_homescreen_notification_gestures_notifications">Értesítések</string>
+  <string name="pref_homescreen_notification_gestures_panel">Gyorsbeállítások panel</string>
 </resources>
