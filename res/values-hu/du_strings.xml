@@ -18,72 +18,72 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- General -->
-    <string name="settings_title">Settings</string>
+    <string name="settings_title">Beállitások</string>
     <!-- Categories -->
-    <string name="home_category_title">Home screen</string>
-    <string name="home_category_summary">Grid layout, app labels and dock</string>
-    <string name="icons_category_title">Icons</string>
-    <string name="icons_category_summary">Icon pack, shape, size and notification dots</string>
-    <string name="app_drawer_category_title">App drawer</string>
-    <string name="app_drawer_category_summary">Hide apps and app drawer labels</string>
-    <string name="gestures_category_title">Gestures</string>
-    <string name="gestures_category_summary">Double tap, swipe down and clear-all gestures</string>
-    <string name="gestures_other_category_title">Other</string>
+    <string name="home_category_title">Kezdőlap</string>
+    <string name="home_category_summary">Rácsok, alkalmazás feliratok és dokk</string>
+    <string name="icons_category_title">Ikonok</string>
+    <string name="icons_category_summary">Ikoncsomag, forma, méret és értesítési pontok</string>
+    <string name="app_drawer_category_title">Alkalmazásfiók</string>
+    <string name="app_drawer_category_summary">Alkalmazások és alkalmazásfiók feliratainak elrejtése</string>
+    <string name="gestures_category_title">Gesztusok</string>
+    <string name="gestures_category_summary">Dupla érintés, lefelé csúsztatás és összes törlése gesztusok</string>
+    <string name="gestures_other_category_title">Egyéb</string>
     <!-- Sub categories -->
-    <string name="home_grid_title">Grid layout</string>
-    <string name="icon_layout_title">Icon layout</string>
+    <string name="home_grid_title">Rácselrendezés</string>
+    <string name="icon_layout_title">Ikonelrendezés</string>
     <!-- Icon packs -->
-    <string name="icon_pack">Icon pack</string>
-    <string name="icon_pack_summary">Change the look of your app icons</string>
-    <string name="icon_pack_none">Default</string>
+    <string name="icon_pack">Ikoncsomag</string>
+    <string name="icon_pack_summary">Megváltoztathatja az alkalmazásikonok kinézetét</string>
+    <string name="icon_pack_none">Alapértelmezett</string>
     <!-- Icon shape -->
-    <string name="icon_shape_override_label_custom">Icon shape</string>
-    <string name="icon_shape_rounded_square">Rounded square</string>
+    <string name="icon_shape_override_label_custom">Az ikonok formája</string>
+    <string name="icon_shape_rounded_square">Lekerekített sarkok</string>
     <!-- Icon size -->
-    <string name="icon_size_title">Icon size</string>
+    <string name="icon_size_title">Ikon mérete</string>
     <!-- Gestures -->
-    <string name="allow_swipe_down_clearall_title">Clear all from recents view</string>
-    <string name="allow_swipe_down_clearall_desc">Swipe vertically downward in recents view to clear all apps</string>
-    <string name="pref_homescreen_dt_gestures_title">Double tap</string>
-    <string name="pref_homescreen_swipe_down_gestures_title">Swipe down</string>
-    <string name="pref_homescreen_gestures_none">None</string>
-    <string name="pref_homescreen_gestures_sleep">Screen off</string>
-    <string name="pref_homescreen_gestures_torch">Flashlight</string>
-    <string name="pref_homescreen_gestures_google">Google search</string>
-    <string name="pref_homescreen_dt_gestures_google_toast">Google search is not installed</string>
-    <string name="pref_homescreen_gestures_volume_panel">Volume panel</string>
-    <string name="pref_homescreen_gestures_clear_notifications">Clear notifications</string>
-    <string name="pref_homescreen_gestures_screenshot">Screenshot</string>
-    <string name="pref_homescreen_gestures_notifications">Notifications</string>
-    <string name="pref_homescreen_gestures_qs_panel">QS panel</string>
+    <string name="allow_swipe_down_clearall_title">Az összes Előzmény törlése</string>
+    <string name="allow_swipe_down_clearall_desc">Csúsztasson függőlegesen lefelé, hogy törölje az összes alkalmazást az Előzményekből</string>
+    <string name="pref_homescreen_dt_gestures_title">Dupla érintés</string>
+    <string name="pref_homescreen_swipe_down_gestures_title">Lefelé csúsztatás</string>
+    <string name="pref_homescreen_gestures_none">Nincs</string>
+    <string name="pref_homescreen_gestures_sleep">Képernyő ki</string>
+    <string name="pref_homescreen_gestures_torch">Zseblámpa</string>
+    <string name="pref_homescreen_gestures_google">Google keresés</string>
+    <string name="pref_homescreen_dt_gestures_google_toast">Nincs telepítve a Google keresés</string>
+    <string name="pref_homescreen_gestures_volume_panel">Hangerő panel</string>
+    <string name="pref_homescreen_gestures_clear_notifications">Értesítések törlése</string>
+    <string name="pref_homescreen_gestures_screenshot">Képernyőmentés</string>
+    <string name="pref_homescreen_gestures_notifications">Értesítések</string>
+    <string name="pref_homescreen_gestures_qs_panel">Gyorsbeállítások panel</string>
     <!-- Google Feed -->
-    <string name="google_feed_title">Enable Google App and Search</string>
-    <string name="google_feed_summary">Show Google App with right swipe from home screen and use its search engine for hotseats</string>
+    <string name="google_feed_title">Google alkalmazás és keresés engedélyezése</string>
+    <string name="google_feed_summary">Mutassa a Google alkalmazást a kezdőképernyőtől jobbra és keresőjének használata</string>
     <!-- Grid -->
-    <string name="num_default">Default</string>
-    <string name="number_of_columns_title">Number of columns</string>
-    <string name="number_of_rows_title">Number of rows</string>
-    <string name="number_of_hotseat_title">Number of dock icons</string>
-    <string name="state_loading">Applying\u2026</string>
+    <string name="num_default">Alapértelmezett</string>
+    <string name="number_of_columns_title">Az oszlopok száma</string>
+    <string name="number_of_rows_title">A sorok száma</string>
+    <string name="number_of_hotseat_title">A Dokk-ikonok száma</string>
+    <string name="state_loading">Alkalmazás\u2026</string>
     <!-- Hidden apps -->
-    <string name="hide_app">Hide apps</string>
-    <string name="hide_app_sum">Hide apps from the app drawer</string>
-    <string name="hide_app_selected">&#160;selected</string>
-    <string name="hidden_app">All apps</string>
-    <string name="hide_selected">Hide selected app(s)</string>
-    <string name="more">More</string>
-    <string name="reset_hidden_apps">Reset all</string>
-    <string name="reset_hidden_apps_done">Hidden apps are now available</string>
+    <string name="hide_app">Alkalmazások elrejtése</string>
+    <string name="hide_app_sum">Alkalmazások elrejtése az alkalmazásfiókban</string>
+    <string name="hide_app_selected">&#160;kiválasztva</string>
+    <string name="hidden_app">Az összes alkalmazás</string>
+    <string name="hide_selected">Kiválasztott alkalmazás(ok) elrejtése</string>
+    <string name="more">Továbbiak</string>
+    <string name="reset_hidden_apps">Az összes visszaállítása</string>
+    <string name="reset_hidden_apps_done">A rejtett alkalmazások újra elérhetők</string>
     <!-- Show labels on icon -->
-    <string name="app_show_label_title">App labels</string>
-    <string name="desktop_show_label_summary">Show the labels of apps on the homescreen</string>
-    <string name="allapps_show_label_summary">Show the labels of apps in the app drawer</string>
+    <string name="app_show_label_title">Alkalmazásnevek</string>
+    <string name="desktop_show_label_summary">Az alkalmazások nevének megjelenítése a Kezdőképernyőn</string>
+    <string name="allapps_show_label_summary">Az alkalmazások nevének megjelenítése az Alkalmazásfiókban</string>
     <!-- QSB -->
-    <string name="hotseat_qsb_preferences">Preferences</string>
-    <string name="label_search">Search</string>
-    <string name="label_voice_search">Voice search</string>
+    <string name="hotseat_qsb_preferences">Beállítások</string>
+    <string name="label_search">Keresés</string>
+    <string name="label_voice_search">Hangalapú keresés</string>
     <!-- Lock desktop -->
-    <string name="lock_desktop_title">Lock desktop</string>
-    <string name="lock_desktop_summary">Prevent the homescreen from being modified</string>
-    <string name="lock_desktop_toast">Desktop is locked. Unlock it to proceed.</string>
+    <string name="lock_desktop_title">Asztal zárolása</string>
+    <string name="lock_desktop_summary">Kezdőképernyő módosításának elkerülése</string>
+    <string name="lock_desktop_toast">Kezdőképernyő zárolva. Oldja fel a folytatáshoz.</string>
 </resources>

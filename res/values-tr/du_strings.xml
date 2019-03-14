@@ -21,39 +21,39 @@
     <string name="settings_title">Ayarlar</string>
     <!-- Categories -->
     <string name="home_category_title">Ana ekran</string>
-    <string name="home_category_summary">Grid layout, app labels and dock</string>
+    <string name="home_category_summary">Izgara yerleşimi, uygulama etiketleri ve alt panel</string>
     <string name="icons_category_title">Simgeler</string>
     <string name="icons_category_summary">Simge paketi, şekil, boyut ve bildirim noktaları</string>
     <string name="app_drawer_category_title">Uygulama çekmecesi</string>
     <string name="app_drawer_category_summary">Uygulamaları ve uygulama çekmecesi etiketlerini gizle</string>
     <string name="gestures_category_title">Hareketler</string>
-    <string name="gestures_category_summary">Çift dokunma, aşağı kaydırın ve tüm hareketleri temizleyin</string>
+    <string name="gestures_category_summary">Çift dokunma, aşağı kaydırma ve tüm hareketleri temizleyin</string>
     <string name="gestures_other_category_title">Diğer</string>
     <!-- Sub categories -->
     <string name="home_grid_title">Izgara düzeni</string>
     <string name="icon_layout_title">Simge düzeni</string>
     <!-- Icon packs -->
     <string name="icon_pack">Simge paketi</string>
-    <string name="icon_pack_summary">Change the look of your app icons</string>
+    <string name="icon_pack_summary">Uygulama simgelerinizin görünümünü değiştirin</string>
     <string name="icon_pack_none">Varsayılan</string>
     <!-- Icon shape -->
     <string name="icon_shape_override_label_custom">Simge şekli</string>
-    <string name="icon_shape_rounded_square">Rounded square</string>
+    <string name="icon_shape_rounded_square">Yuvarlatılmış kare</string>
     <!-- Icon size -->
     <string name="icon_size_title">Simge boyutu</string>
     <!-- Gestures -->
-    <string name="allow_swipe_down_clearall_title">Clear all from recents view</string>
-    <string name="allow_swipe_down_clearall_desc">Swipe vertically downward in recents view to clear all apps</string>
+    <string name="allow_swipe_down_clearall_title">Tümünü görüntüleme görünümünden temizle</string>
+    <string name="allow_swipe_down_clearall_desc">Tüm uygulamaları temizlemek için son görünümde dikey olarak aşağı doğru kaydırın</string>
     <string name="pref_homescreen_dt_gestures_title">Çift dokunma</string>
     <string name="pref_homescreen_swipe_down_gestures_title">Aşağı kaydır</string>
     <string name="pref_homescreen_gestures_none">Hiçbiri</string>
     <string name="pref_homescreen_gestures_sleep">Ekranı kapat</string>
-    <string name="pref_homescreen_gestures_torch">El Feneri</string>
+    <string name="pref_homescreen_gestures_torch">El feneri</string>
     <string name="pref_homescreen_gestures_google">Google araması</string>
     <string name="pref_homescreen_dt_gestures_google_toast">Google arama yüklü değil</string>
     <string name="pref_homescreen_gestures_volume_panel">Ses paneli</string>
     <string name="pref_homescreen_gestures_clear_notifications">Bildirimleri temizle</string>
-    <string name="pref_homescreen_gestures_screenshot">Ekran Görüntüsü</string>
+    <string name="pref_homescreen_gestures_screenshot">Ekran görüntüsü</string>
     <string name="pref_homescreen_gestures_notifications">Bildirimler</string>
     <string name="pref_homescreen_gestures_qs_panel">Hızlı ayarlar paneli</string>
     <!-- Google Feed -->
@@ -67,23 +67,23 @@
     <string name="state_loading">Uygulanıyor\u2026</string>
     <!-- Hidden apps -->
     <string name="hide_app">Uygulamaları gizle</string>
-    <string name="hide_app_sum">Hide apps from the app drawer</string>
+    <string name="hide_app_sum">Uygulamaları uygulama çekmecesinden gizleyin</string>
     <string name="hide_app_selected">&#160;seçildi</string>
     <string name="hidden_app">Tüm uygulamalar</string>
     <string name="hide_selected">Seçilen uygulama(ları) gizle</string>
     <string name="more">Daha fazla</string>
     <string name="reset_hidden_apps">Tümünü sıfırla</string>
-    <string name="reset_hidden_apps_done">Hidden apps are now available</string>
+    <string name="reset_hidden_apps_done">Gizli uygulamalar artık kullanılabilir</string>
     <!-- Show labels on icon -->
     <string name="app_show_label_title">Uygulama etiketleri</string>
-    <string name="desktop_show_label_summary">Show the labels of apps on the homescreen</string>
-    <string name="allapps_show_label_summary">Show the labels of apps in the app drawer</string>
+    <string name="desktop_show_label_summary">Ana ekrandaki uygulamaların etiketlerini göster</string>
+    <string name="allapps_show_label_summary">Uygulama çekmecesinde uygulama etiketlerini göster</string>
     <!-- QSB -->
-    <string name="hotseat_qsb_preferences">Preferences</string>
-    <string name="label_search">Search</string>
-    <string name="label_voice_search">Voice search</string>
+    <string name="hotseat_qsb_preferences">Tercihler</string>
+    <string name="label_search">Ara</string>
+    <string name="label_voice_search">Sesli arama</string>
     <!-- Lock desktop -->
-    <string name="lock_desktop_title">Lock desktop</string>
-    <string name="lock_desktop_summary">Prevent the homescreen from being modified</string>
-    <string name="lock_desktop_toast">Desktop is locked. Unlock it to proceed.</string>
+    <string name="lock_desktop_title">Masaüstünü kilitle</string>
+    <string name="lock_desktop_summary">Giriş ekranının değiştirilmesini önleyin</string>
+    <string name="lock_desktop_toast">Masaüstü kilitlendi. Devam etmek için kilidi açın.</string>
 </resources>

@@ -18,17 +18,17 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- General -->
-    <string name="settings_title">Settings</string>
+    <string name="settings_title">Innstillinger</string>
     <!-- Categories -->
     <string name="home_category_title">Home screen</string>
     <string name="home_category_summary">Grid layout, app labels and dock</string>
-    <string name="icons_category_title">Icons</string>
+    <string name="icons_category_title">Ikoner</string>
     <string name="icons_category_summary">Icon pack, shape, size and notification dots</string>
-    <string name="app_drawer_category_title">App drawer</string>
+    <string name="app_drawer_category_title">App Skuff</string>
     <string name="app_drawer_category_summary">Hide apps and app drawer labels</string>
-    <string name="gestures_category_title">Gestures</string>
+    <string name="gestures_category_title">Bevegelser</string>
     <string name="gestures_category_summary">Double tap, swipe down and clear-all gestures</string>
-    <string name="gestures_other_category_title">Other</string>
+    <string name="gestures_other_category_title">Annet</string>
     <!-- Sub categories -->
     <string name="home_grid_title">Grid layout</string>
     <string name="icon_layout_title">Icon layout</string>
