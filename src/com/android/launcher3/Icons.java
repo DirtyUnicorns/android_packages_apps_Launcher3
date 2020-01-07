@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.launcher3.settings;
+package com.android.launcher3;
 
 import android.app.Activity;
 import android.app.DialogFragment;
@@ -22,34 +22,41 @@ import android.app.Fragment;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.provider.Settings;
 import android.text.TextUtils;
 
 import com.android.launcher3.LauncherFiles;
-import com.android.launcher3.LauncherTab;
 import com.android.launcher3.R;
 import com.android.launcher3.Utilities;
 import com.android.launcher3.config.FeatureFlags;
+import com.android.launcher3.graphics.GridOptionsProvider;
+import com.android.launcher3.settings.NotificationDotsPreference;
+import com.android.launcher3.settings.PreferenceHighlighter;
 import com.android.launcher3.uioverrides.plugins.PluginManagerWrapper;
 import com.android.launcher3.util.SecureSettingsObserver;
+import static com.android.launcher3.SessionCommitReceiver.ADD_ICON_PREFERENCE_KEY;
+import static com.android.launcher3.util.SecureSettingsObserver.newNotificationSettingsObserver;
 
 import androidx.preference.Preference;
-import androidx.preference.Preference.OnPreferenceChangeListener;
 import androidx.preference.PreferenceFragment;
 import androidx.preference.PreferenceFragment.OnPreferenceStartFragmentCallback;
 import androidx.preference.PreferenceFragment.OnPreferenceStartScreenCallback;
 import androidx.preference.PreferenceGroup.PreferencePositionCallback;
 import androidx.preference.PreferenceScreen;
-import androidx.preference.SwitchPreference;
 import androidx.recyclerview.widget.RecyclerView;
 
 /**
  * Settings activity for Launcher. Currently implements the following setting: Allow rotation
  */
-public class SettingsActivity extends Activity
+public class Icons extends Activity
         implements OnPreferenceStartFragmentCallback, OnPreferenceStartScreenCallback,
         SharedPreferences.OnSharedPreferenceChangeListener{
+
+    private static final String NOTIFICATION_DOTS_PREFERENCE_KEY = "pref_icon_badging";
+    /** Hidden field Settings.Secure.ENABLED_NOTIFICATION_LISTENERS */
+    private static final String NOTIFICATION_ENABLED_LISTENERS = "enabled_notification_listeners";
 
     public static final String EXTRA_FRAGMENT_ARG_KEY = ":settings:fragment_args_key";
     public static final String EXTRA_SHOW_FRAGMENT_ARGS = ":settings:show_fragment_args";
@@ -57,25 +64,14 @@ public class SettingsActivity extends Activity
     public static final String SAVE_HIGHLIGHTED_KEY = "android:preference_highlighted";
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-
-        if (savedInstanceState == null) {
-            Bundle args = new Bundle();
-            String prefKey = getIntent().getStringExtra(EXTRA_FRAGMENT_ARG_KEY);
-            if (!TextUtils.isEmpty(prefKey)) {
-                args.putString(EXTRA_FRAGMENT_ARG_KEY, prefKey);
-            }
-
-            Fragment f = Fragment.instantiate(
-                    this, getString(R.string.settings_fragment_name), args);
-            // Display the fragment as the main content.
-            getFragmentManager().beginTransaction()
-                    .replace(android.R.id.content, f)
-                    .commit();
+    protected void onCreate(final Bundle bundle) {
+        super.onCreate(bundle);
+        if (bundle == null) {
+            getFragmentManager().beginTransaction().replace(android.R.id.content, new IconsSettingsFragment()).commit();
         }
         Utilities.getPrefs(getApplicationContext()).registerOnSharedPreferenceChangeListener(this);
     }
+
     @Override
     public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String key) {
     }
@@ -109,13 +105,15 @@ public class SettingsActivity extends Activity
     public boolean onPreferenceStartScreen(PreferenceFragment caller, PreferenceScreen pref) {
         Bundle args = new Bundle();
         args.putString(PreferenceFragment.ARG_PREFERENCE_ROOT, pref.getKey());
-        return startFragment(getString(R.string.settings_fragment_name), args, pref.getKey());
+        return startFragment(getString(R.string.icons_category_title), args, pref.getKey());
     }
 
     /**
      * This fragment shows the launcher preferences.
      */
-    public static class LauncherSettingsFragment extends PreferenceFragment {
+    public static class IconsSettingsFragment extends PreferenceFragment {
+
+        private SecureSettingsObserver mNotificationDotsObserver;
 
         private String mHighLightKey;
         private boolean mPreferenceHighlighted = false;
@@ -123,17 +121,13 @@ public class SettingsActivity extends Activity
         @Override
         public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
             final Bundle args = getArguments();
-            mHighLightKey = args == null ? null : args.getString(EXTRA_FRAGMENT_ARG_KEY);
-            if (rootKey == null && !TextUtils.isEmpty(mHighLightKey)) {
-                rootKey = getParentKeyForPref(mHighLightKey);
-            }
 
             if (savedInstanceState != null) {
                 mPreferenceHighlighted = savedInstanceState.getBoolean(SAVE_HIGHLIGHTED_KEY);
             }
 
             getPreferenceManager().setSharedPreferencesName(LauncherFiles.SHARED_PREFERENCES_KEY);
-            setPreferencesFromResource(R.xml.launcher_preferences, rootKey);
+            setPreferencesFromResource(R.xml.icons_preferences, rootKey);
 
             PreferenceScreen screen = getPreferenceScreen();
             for (int i = screen.getPreferenceCount() - 1; i >= 0; i--) {
@@ -159,8 +153,28 @@ public class SettingsActivity extends Activity
          * will remove that preference from the list.
          */
         protected boolean initPreference(Preference preference) {
-            //switch (preference.getKey()) {
-            //}
+            switch (preference.getKey()) {
+                case NOTIFICATION_DOTS_PREFERENCE_KEY:
+                    if (!Utilities.ATLEAST_OREO ||
+                            !getResources().getBoolean(R.bool.notification_dots_enabled)) {
+                        return false;
+                    }
+
+                    // Listen to system notification dot settings while this UI is active.
+                    mNotificationDotsObserver = newNotificationSettingsObserver(
+                            getActivity(), (NotificationDotsPreference) preference);
+                    mNotificationDotsObserver.register();
+                    // Also listen if notification permission changes
+                    mNotificationDotsObserver.getResolver().registerContentObserver(
+                            Settings.Secure.getUriFor(NOTIFICATION_ENABLED_LISTENERS), false,
+                            mNotificationDotsObserver);
+                    mNotificationDotsObserver.dispatchOnChange();
+                    return true;
+
+                case ADD_ICON_PREFERENCE_KEY:
+                    return Utilities.ATLEAST_OREO;
+    
+            }
             return true;
         }
 
@@ -195,6 +209,10 @@ public class SettingsActivity extends Activity
 
         @Override
         public void onDestroy() {
+            if (mNotificationDotsObserver != null) {
+                mNotificationDotsObserver.unregister();
+                mNotificationDotsObserver = null;
+            }
             super.onDestroy();
         }
     }

@@ -170,7 +170,7 @@
         -->
         <activity
             android:name="com.android.launcher3.settings.SettingsActivity"
-            android:label="@string/settings_button_text"
+            android:label="@string/settings_title"
             android:theme="@android:style/Theme.DeviceDefault.Settings"
             android:autoRemoveFromRecents="true">
             <intent-filter>
@@ -178,6 +178,38 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+
+        <!-- Icons -->
+        <activity
+            android:name="com.android.launcher3.Icons"
+            android:label="@string/icons_category_title"
+            android:theme="@android:style/Theme.DeviceDefault.Settings"
+            android:autoRemoveFromRecents="true"
+            android:parentActivityName="com.android.launcher3.SettingsActivity" />
+
+        <!-- App drawer -->
+        <activity
+            android:name="com.android.launcher3.AppDrawer"
+            android:label="@string/app_drawer_category_title"
+            android:theme="@android:style/Theme.DeviceDefault.Settings"
+            android:autoRemoveFromRecents="true"
+            android:parentActivityName="com.android.launcher3.SettingsActivity" />
+
+        <!-- Homescreen -->
+        <activity
+            android:name="com.android.launcher3.Homescreen"
+            android:label="@string/home_category_title"
+            android:theme="@android:style/Theme.DeviceDefault.Settings"
+            android:autoRemoveFromRecents="true"
+            android:parentActivityName="com.android.launcher3.SettingsActivity" />
+
+        <!-- Misc settings -->
+        <activity
+            android:name="com.android.launcher3.Misc"
+            android:label="@string/misc_category_title"
+            android:theme="@android:style/Theme.DeviceDefault.Settings"
+            android:autoRemoveFromRecents="true"
+            android:parentActivityName="com.android.launcher3.SettingsActivity" />
 
         <provider
             android:name="com.android.launcher3.testing.TestInformationProvider"

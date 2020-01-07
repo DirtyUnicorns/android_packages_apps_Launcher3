@@ -108,7 +108,6 @@ import com.android.launcher3.model.ModelWriter;
 import com.android.launcher3.notification.NotificationListener;
 import com.android.launcher3.popup.PopupContainerWithArrow;
 import com.android.launcher3.popup.PopupDataProvider;
-import com.android.launcher3.settings.SettingsActivity;
 import com.android.launcher3.shortcuts.DeepShortcutManager;
 import com.android.launcher3.states.InternalStateHandler;
 import com.android.launcher3.states.RotationHelper;
@@ -2668,7 +2667,7 @@ public class Launcher extends BaseDraggingActivity implements LauncherExterns,
 
     @Override
     public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String key) {
-        if (SettingsActivity.KEY_FEED_INTEGRATION.equals(key)) {
+        if (Homescreen.KEY_FEED_INTEGRATION.equals(key)) {
             if (mLauncherTab != null) {
                 mFeedIntegrationEnabled = isFeedIntegrationEnabled();
                 ClientOptions clientOptions = new ClientOptions(mFeedIntegrationEnabled ? 1 : 0);
