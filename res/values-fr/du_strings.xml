@@ -32,6 +32,8 @@
     <string name="misc_category_summary">Options supplémentaires</string>
 
     <!-- Google Feed -->
-    <string name="settings_feed">Afficher le panneau de l\'application Google</string>
+    <string name="google_feed_title">Panneau de l\'application Google</string>
+    <string name="google_feed_summary">Afficher le panneau de l\'application Google sur l\'écran d\'accueil le plus à gauche</string>
+
 
 </resources>
